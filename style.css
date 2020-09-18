@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,700;1,400&display=swap');
+
+html,
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.short_contact_list li a {
+    color: #000;
+    word-spacing: 3em;
+}
+
+.short_contact_list li {
+
+    font-size: 20px;
+    display: inline-block;
+}
+
+.header-section li {
+    list-style: none;
+}
+
+#navigation {
+    text-align: center;
+    word-spacing: 4em;
+    margin-bottom: 0;
+}
+
+#navigation li {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.nav-menu {
+
+    height: 100%;
+}
+
+#nav-col {
+    vertical-align: middle;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#navigation li a {
+    color: #000;
+    font-size: 20px;
+
+}
+
+#nav-round {
+    margin-bottom: -35px;
+    background-color: #fff;
+    /* background-color: rgb(92, 207, 140); */
+    border-radius: 25px;
+    position: relative;
+    z-index: 9999;
+    height: 50px;
+}
+
+#nav-round img {
+    height: 70px;
+    width: 70px;
+
+}
+
+#logoNav {
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.heroImg {
+    height: 75vh;
+    width: 100vw;
+    background: linear-gradient(rgba(92, 207, 140, 0.2),
+            rgba(92, 207, 140, 0.2)), url("img/Hero.jpg");
+    /* position: fixed; */
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1;
+   
+}
+
+/*PEN STYLES*/
+
