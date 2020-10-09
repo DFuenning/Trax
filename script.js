@@ -1,5 +1,5 @@
 const counters = document.querySelectorAll('.counter');
-const speed = 1000000000; 
+const speed = 1000000000;
 
 counters.forEach(counter => {
 	const updateCount = () => {
@@ -9,7 +9,7 @@ counters.forEach(counter => {
 		// Lower inc to slow and higher to slow
 		const inc = target / speed;
 
-		
+
 
 		// Check if target is reached
 		if (count < target) {
@@ -24,3 +24,19 @@ counters.forEach(counter => {
 
 	updateCount();
 });
+//* Navbar Fixed  
+var nav_offset_top = $('#header').height()+50; 
+
+function navbarFixed() {
+	if ($('.fixed-top').length) {
+		$(window).scroll(function () {
+			var scroll = $(window).scrollTop();
+			if (scroll >= nav_offset_top) {
+				$(".fixed-top").addClass("navbar_fixed");
+			} else {
+				$(".fixed-top").removeClass("navbar_fixed");
+			}
+		});
+	};
+};
+navbarFixed();

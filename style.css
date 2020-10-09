@@ -27,13 +27,15 @@ h6 {
 
 #header {
     transition: all 0.5s;
-    z-index: 997;
+    z-index: 999;
     transition: all 0.5s;
     top: 20px;
+    
 }
 
 #header .header-container {
     background: #fff;
+    border: 1px solid #009970;
 }
 
 #header.header-scrolled {
@@ -104,6 +106,7 @@ h6 {
     margin: 0;
     padding: 0;
     list-style: none;
+    
 }
 
 .nav-menu>ul>li {
@@ -228,9 +231,17 @@ h6 {
 #hero {
     width: 100%;
     height: 80vh;
-    background: url("img/NwHero.jpg") center center;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("img/NwHero.jpg") center center;
     background-size: cover;
     position: relative;
+}
+
+.heroLogo img {
+    width: 200px;
+    height: 120px;
+    padding-top: 25px;
+    padding-left: 25px;
+    
 }
 
 #hero .container {
@@ -239,7 +250,6 @@ h6 {
 
 #hero:before {
     content: "";
-    background: rgba(0, 0, 0, 0.7);
     position: absolute;
     bottom: 0;
     top: 0;
@@ -247,15 +257,9 @@ h6 {
     right: 0;
 }
 
-#hero h1 {
-    font-family: 'Vollkorn', serif;
-    font-weight: 600;
-    margin: 0 0 10px 0;
-    font-size: 60px;
-    letter-spacing: 0.1em;
-    font-weight: 700;
-    line-height: 56px;
-    color: #fff;
+#hero img {
+ width: 130px;
+ height: 100px;
 }
 
 #hero h2 {
@@ -311,7 +315,10 @@ h6 {
     }
 }
 
-
+.about {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
 
 .about .content h2 {
     font-weight: 700;
@@ -376,6 +383,7 @@ h6 {
     background: #009970;
     border-radius: 4px;
     color: #fff;
+    margin-bottom: 100px;
 }
 
 .why-us .content h3 {
@@ -444,7 +452,7 @@ h6 {
 /* CALL TO ACTION SECTION */
 
 .cta {
-    margin: 50px auto;
+    padding: 50px auto;
     background: linear-gradient(rgba(2, 2, 2, 0.7), rgba(0, 0, 0, 0.7)), url("../img/cta-bg.jpg") fixed center center;
     background-size: cover;
     padding: 60px 0;
@@ -479,6 +487,120 @@ h6 {
     background: #009970;
     border: 2px solid #009970;
 }
+
+/* SERVICES INFO SECTION */
+
+
+
+.ftco-section {
+    position: relative;
+    width: 100%;
+    display: block;
+    background-color: rgb(238, 238, 238);
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.ftco-section .nav-pills p {
+    margin-bottom: 0;
+}
+
+.ftco-section .nav-pills .nav-link {
+    border-radius: 0;
+    margin-bottom: 0;
+    color: #009970;
+    font-size: 18px;
+    font-weight: 400;
+    position: relative;
+    display: inline-block;
+    bordeR: 1px solid #009970;
+    margin-left: 5px;
+    margin-right: 5px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    border-radius: 30px;
+
+
+}
+
+.ftco-section .nav-pills .nav-link.active,
+.ftco-section .nav-pills .nav-link:hover {
+    color: #fff;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    background: #009970;
+    background: -moz-linear-gradient(45deg, #009970 0%, #009970 100%);
+    background: -webkit-gradient(left bottom, right top, color-stop(0%, #009970), color-stop(100%, #009970));
+    background: -webkit-linear-gradient(45deg, #009970 0%, #009970 100%);
+    background: -o-linear-gradient(45deg, #009970 0%, #009970 100%);
+    background: -ms-linear-gradient(45deg, #009970 0%, #009970 100%);
+    background: linear-gradient(45deg, #009970 0%, #009970 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#009970', endColorstr='#009970', GradientType=1);
+    border: 1px solid transparent;
+}
+
+.ftco-section .nav-pills .nav-link.active:after,
+.ftco-section .nav-pills .nav-link:hover:after {
+    opacity: 1;
+}
+
+@media (max-width: 767.98px) {
+
+    .ftco-section .nav-pills .nav-link.active:after,
+    .ftco-section .nav-pills .nav-link:hover:after {
+        opacity: 0;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .ftco-section .nav-pills .nav-link {
+        display: block;
+        width: 100%;
+        margin-bottom: 5px;
+    }
+}
+
+.ftco-section .tab-content .tab-pane h2 {
+    font-size: 24px;
+}
+
+.ftco-section .tab-content .tab-pane .one-forth {
+    width: 50%;
+}
+
+.ftco-section .tab-content .tab-pane .one-forth img {
+    -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.03);
+    -moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.03);
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.03);
+}
+
+@media (max-width: 767.98px) {
+    .ftco-section .tab-content .tab-pane .one-forth img {
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .ftco-section .tab-content .tab-pane .one-forth {
+        width: 100%;
+    }
+}
+
+.ftco-section .tab-content .tab-pane .one-half {
+    width: 50%;
+}
+
+@media (max-width: 767.98px) {
+    .ftco-section .tab-content .tab-pane .one-half {
+        width: 100%;
+    }
+}
+
+
 
 
 /* CONTACT US */
