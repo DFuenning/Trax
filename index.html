@@ -20,39 +20,38 @@
   <link rel="stylesheet" href="css/gijgo.css">
   <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="css/slicknav.css">
-  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Crimson+Text:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Crimson+Text:wght@400;700&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
-  <section id="hero">
-    <!-- <div class="heroLogo">
-      <img src="img/Trax.png" alt="mainLogo">
-    </div> -->
-  <header id="header" class="d-flex align-items-center">
+  <header id="header" class="fixed-top d-flex align-items-center">
     <div class="container">
       <div class="header-container d-flex align-items-center">
         <div class="logo mr-auto">
-          <a href="index.html"><img src="img/Traxtrans.png" alt="mainLogo"></a>
+          <h1 class="text-light"><a href="index.html"><span>Trax RFID</span></a></h1>
         </div>
 
         <nav class="nav-menu d-none d-lg-block">
           <ul>
             <li class="active"><a href="#header">Home</a></li>
-            <li><a href="#about">About Us</a></li>
-            <li><a href="services.html">Services</a></li>
-            <!-- <li><a href="#portfolio">Portfolio</a></li> -->
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
 
-            <li class="get-started"><a href="#contact">Contact Us</a></li>
+            <li class="get-started"><a href="#about">Get Started</a></li>
           </ul>
         </nav><!-- .nav-menu -->
       </div><!-- End Header Container -->
     </div>
   </header><!-- End Header -->
-  <!-- ======= Hero Section ======= -->
+
   
-    <div class="container text-center position-relative" data-aos="fade-in" data-aos-delay="200">
+    <!-- ======= Hero Section ======= -->
+<section id="hero">
+    <div id="heroText" class="container text-center position-relative" data-aos="fade-in" data-aos-delay="200">
       <h1>Trax RFID</h1>
       <h2>Changing the way we communicate with the world</h2>
       <a href="#contact" class="btn-get-started scrollto">Contact Us</a>
@@ -62,7 +61,9 @@
   <!-- BEGIN ABOUT US SECTION -->
   <section id="about" class="about mt-5 mb-5">
     <div class="container">
-
+      <div class="row" id="aboutHeading">
+        <h1 class="text-muted">Who We Are</h1>
+      </div>
       <div class="row content">
         <div class="col-lg-6" data-aos="fade-right" data-aos-delay="100">
           <h2>Revolutionizing RFID to help support your business needs</h2>
@@ -70,15 +71,19 @@
         </div>
         <div class="col-lg-6 pt-4 pt-lg-0" data-aos="fade-left" data-aos-delay="200">
           <p>
-            Hana Technologies, Inc. is an Ohio Corporation and a member of The Hana Group or Hana Microelectronics Public Co., Ltd., which was established in 1978 and has become one of Thailand’s leading hi-tech companies.
+            Hana Technologies, Inc. is an Ohio Corporation and a member of The Hana Group or Hana Microelectronics
+            Public Co., Ltd., which was established in 1978 and has become one of Thailand’s leading hi-tech companies.
           </p>
           <ul>
             <li><i class="ri-check-double-line"></i> World class manufacturing with 6 locations world-wide</li>
-            <li><i class="ri-check-double-line"></i> Experience in diverse markets from automotive to telecom to consumer</li>
-            <li><i class="ri-check-double-line"></i> Revolutionizing RFID industry with cutting edge design, testing and manufacturing capabilities</li>
+            <li><i class="ri-check-double-line"></i> Experience in diverse markets from automotive to telecom to
+              consumer</li>
+            <li><i class="ri-check-double-line"></i> Revolutionizing RFID industry with cutting edge design, testing and
+              manufacturing capabilities</li>
           </ul>
           <p class="font-italic">
-            Located in the heart of Ohio, serving the needs of clients world-wide, meeting our customers needs big and small. 
+            Located in the heart of Ohio, serving the needs of clients world-wide, meeting our customers needs big and
+            small.
           </p>
         </div>
       </div>
@@ -86,176 +91,255 @@
     </div>
   </section>
   <!-- End About Section -->
- <!-- ======= Counts Section ======= -->
- <section id="counts" class="counts">
-  <div class="container">
+  <!-- ======= Counts Section ======= -->
+  <section id="counts" class="counts">
+    <div class="container">
 
-    <div class="row counters">
+      <div class="row counters">
 
-      <div class="col-lg-3 col-6 text-center">
-        <span class="counter" data-toggle="counter-up" data-target="1000000000">86818616</span>
-        <p>Inlays Manufactured Year to Date</p>
-      </div>
+        <div class="col-lg-3 col-6 text-center">
+          <span class="counter" data-toggle="counter-up" data-target="1000000000">86818616</span>
+          <p>Inlays Manufactured Year to Date</p>
+        </div>
 
-      <div class="col-lg-3 col-6 text-center">
-        <span data-toggle="counter-up">521</span>
-        <p>Projects</p>
-      </div>
+        <div class="col-lg-3 col-6 text-center">
+          <span data-toggle="counter-up">521</span>
+          <p>Projects</p>
+        </div>
 
-      <div class="col-lg-3 col-6 text-center">
-        <span data-toggle="counter-up">24/7</span>
-        <p>Hours Of Production</p>
-      </div>
+        <div class="col-lg-3 col-6 text-center">
+          <span data-toggle="counter-up">24/7</span>
+          <p>Hours Of Production</p>
+        </div>
 
-      <div class="col-lg-3 col-6 text-center">
-        <span data-toggle="counter-up">86</span>
-        <p>Hard Workers</p>
+        <div class="col-lg-3 col-6 text-center">
+          <span data-toggle="counter-up">86</span>
+          <p>Hard Workers</p>
+        </div>
+
       </div>
 
     </div>
-
-  </div>
-</section>
-<!-- END COUNTS SECTION -->
- <!-- ======= Why Us Section ======= -->
- <section id="why-us" class="why-us mt-5">
-  <div class="container">
-
-    <div class="row">
-      <div class="col-lg-4 d-flex align-items-stretch" data-aos="fade-right">
-        <div class="content">
-          <h3>Why Choose Trax for your RFID Needs?</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-            dolore magna aliqua. Duis aute irure dolor in reprehenderit
-            Asperiores dolores sed et. Tenetur quia eos. Autem tempore quibusdam vel necessitatibus optio ad corporis.
-          </p>
-          <div class="text-center">
-            <a href="#whatDo" class="more-btn">Learn More <i class="bx bx-chevron-right"></i></a>
-          </div>
+  </section>
+  <!-- END COUNTS SECTION -->
+  <!-- ======= Why Us Section ======= -->
+  <section id="why-us" class="why-us mt-2">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="section-title-no">
+          <h2>Our Services</h2>
         </div>
       </div>
-      <div class="col-lg-8 d-flex align-items-stretch">
-        <div class="icon-boxes d-flex flex-column justify-content-center">
-          <div class="row">
-            <div class="col-xl-4 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
-              <div class="icon-box mt-4 mt-xl-0">
-                <i class="bx bx-receipt"></i>
-                <h4>Inlays</h4>
-                <p>Roll to roll tags, manufacturing over 300M+ inlays per year in our US facility. </p>
-              </div>
-            </div>
-            <div class="col-xl-4 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="200">
-              <div class="icon-box mt-4 mt-xl-0">
-                <i class="bx bx-cube-alt"></i>
-                <h4>Tags</h4>
-                <p>Designing and manufacturing tags from low to ultra high frequency with endless implementation possibilities to meet your business needs.</p>
-              </div>
-            </div>
-            <div class="col-xl-4 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="300">
-              <div class="icon-box mt-4 mt-xl-0">
-                <i class="bx bx-images"></i>
-                <h4>Modeling & Design</h4>
-                <p>An industry leading team of engineers using state of the art design, manufacturing, and testing equipment to build the products you desire.</p>
-              </div>
+      <div class="row">
+        <div class="col-lg-4 d-flex align-items-stretch" data-aos="fade-right">
+          <div class="content">
+            <h3>Why Choose Trax for your RFID Needs?</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+              dolore magna aliqua. Duis aute irure dolor in reprehenderit
+              Asperiores dolores sed et. Tenetur quia eos. Autem tempore quibusdam vel necessitatibus optio ad corporis.
+            </p>
+            <div class="text-center">
+              <a href="#whatDo" class="more-btn">Learn More <i class="bx bx-chevron-right"></i></a>
             </div>
           </div>
-        </div><!-- End .content-->
+        </div>
+        <div class="col-lg-8 d-flex align-items-stretch">
+          <div class="icon-boxes d-flex flex-column justify-content-center">
+            <div class="row">
+              <div class="col-xl-4 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+                <div class="icon-box mt-2 mt-xl-0">
+                  <i class="bx bx-receipt"></i>
+                  <h4>Inlays</h4>
+                  <p>Roll to roll tags, manufacturing over 300M+ inlays per year in our US facility. </p>
+                </div>
+              </div>
+              <div class="col-xl-4 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="200">
+                <div class="icon-box mt-2 mt-xl-0">
+                  <i class="bx bx-cube-alt"></i>
+                  <h4>Tags</h4>
+                  <p>Designing and manufacturing tags from low to ultra high frequency with endless implementation
+                    possibilities to meet your business needs.</p>
+                </div>
+              </div>
+              <div class="col-xl-4 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="300">
+                <div class="icon-box mt-2 mt-xl-0">
+                  <i class="bx bx-images"></i>
+                  <h4>Modeling & Design</h4>
+                  <p>An industry leading team of engineers using state of the art design, manufacturing, and testing
+                    equipment to build the products you desire.</p>
+                </div>
+              </div>
+            </div>
+          </div><!-- End .content-->
 
-      </div>
-    </div>
-
-  </div>
-
-</section><!-- End Why Us Section -->
-
- 
-
-
-
- 
- <!-- ======= Cta Section ======= -->
- <!-- <section id="cta" class="cta">
-  <div class="container">
-
-    <div class="text-center" data-aos="zoom-in">
-      <h3>Contact Us</h3>
-      <p>Please contact us for any and all business inquiries. Thank you!</p>
-      <a class="cta-btn" href="#">Contact Us</a>
-    </div>
-
-  </div>
-</section> -->
-<!-- End Cta Section -->
-
-<!-- DETAIL SECTION -->
-<!-- <section class="ftco-section" id="whatDo">
-  <div class="container">
-    <div class="row justify-content-center mb-2 pb-2">
-      <div class="col-md-7 text-center heading-section ftco-animate">
-        <h2 class="whatHead">What we do</h2>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-12 nav-link-wrap mb-5 pb-md-5 pb-sm-1 ftco-animate">
-        <div class="nav ftco-animate nav-pills justify-content-center text-center" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-          <a class="nav-link active" id="v-pills-nextgen-tab" data-toggle="pill" href="#v-pills-nextgen" role="tab" aria-controls="v-pills-nextgen" aria-selected="true">RFID Inlays</a>
-
-          <a class="nav-link" id="v-pills-performance-tab" data-toggle="pill" href="#v-pills-performance" role="tab" aria-controls="v-pills-performance" aria-selected="false">RFID Tags</a>
-
-          <a class="nav-link" id="v-pills-effect-tab" data-toggle="pill" href="#v-pills-effect" role="tab" aria-controls="v-pills-effect" aria-selected="false">RFID Readers</a>
         </div>
       </div>
-      <div class="col-md-12 align-items-center ftco-animate">
-        
-        <div class="tab-content ftco-animate" id="v-pills-tabContent">
 
-          <div class="tab-pane fade show active" id="v-pills-nextgen" role="tabpanel" aria-labelledby="v-pills-nextgen-tab">
-            <div class="d-md-flex">
-              <div class="one-forth align-self-center">
-                <img src="img/RFIDtest.jpg" class="img-fluid border" alt="">
-              </div>
-              <div class="one-half ml-md-5 align-self-center">
-                <h2 class="mb-4">RFID Inlays</h2>
-                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt voluptate, quibusdam sunt iste dolores consequatur</p>
-              </div>
-            </div>
-          </div>
+    </div>
 
-          <div class="tab-pane fade" id="v-pills-performance" role="tabpanel" aria-labelledby="v-pills-performance-tab">
-            <div class="d-md-flex">
-              <div class="one-forth order-last align-self-center">
-                <img src="img/RFIDtest.jpg" class="img-fluid border" alt="">
-              </div>
-              <div class="one-half order-first mr-md-5 align-self-center">
-                <h2 class="mb-4">RFID Tire Tags</h2>
-                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt voluptate, quibusdam sunt iste dolores consequatur</p>
-              </div>
-            </div>
-          </div>
+  </section><!-- End Why Us Section -->
+  <!-- ======= Cta Section ======= -->
+  <section id="cta" class="cta">
+    <div class="container">
 
-          <div class="tab-pane fade" id="v-pills-effect" role="tabpanel" aria-labelledby="v-pills-effect-tab">
-            <div class="d-md-flex">
-              <div class="one-forth align-self-center">
-                <img src="img/RFIDtest.jpg" class="img-fluid border" alt="">
-              </div>
-              <div class="one-half ml-md-5 align-self-center">
-                <h2 class="mb-4">RFID Hand-Held Readers</h2>
-                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt voluptate, quibusdam sunt iste dolores consequatur</p>
+      <div class="text-center" data-aos="zoom-in">
+        <h3>Contact Us</h3>
+        <p>Please contact us for any and all business inquiries. Thank you!</p>
+        <a class="cta-btn" href="#">Contact Us</a>
+      </div>
+
+    </div>
+  </section>
+  <!-- End Cta Section -->
+  <!-- ======= Buy Ticket Section ======= -->
+  <section id="case-studies" class="section-with-bg">
+    <div class="container" data-aos="fade-up">
+      <div class="row justify-content-center">
+        <div class="section-title-no">
+
+          <h2>Case Studies</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="card mb-5 mb-lg-0">
+            <div class="card-body">
+              <h3 class="text-uppercase text-center">Tire Tags <br><br></h3>
+              <!-- <h6 class="card-price text-center">Tire Tags</h6> -->
+              <hr>
+              <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
+                consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat
+                sit in iste officiis commodi q uidem hic quas.</p>
+              <hr>
+              <div class="text-center">
+                <button type="button" class="btn" data-toggle="modal" data-target="#tire-tag-modal"
+                  data-modal-type="tire tag">Tire Tags</button>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
-  </div>
-</section> -->
-<!-- END DETAIL SECTION -->
+        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="card mb-5 mb-lg-0">
+            <div class="card-body">
+              <h3 class="text-uppercase text-center">Invacare Corporation</h3>
+              <!-- <h6 class="card-price text-center">Invacare</h6> -->
+              <hr>
+              <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
+                consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat
+                sit in iste officiis commodi q uidem hic quas.</p>
+              <hr>
+              <div class="text-center">
+                <button type="button" class="btn" data-toggle="modal" data-target="#invacare-modal"
+                  data-modal-type="invacare">Invacare</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Pro Tier -->
+        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="300">
+          <div class="card">
+            <div class="card-body">
+              <h3 class="text-uppercase text-center">Wireless Chargers</h3>
+              <!-- <h6 class="card-price text-center">Wireless Chargers</h6> -->
+              <hr>
+              <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
+                consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat
+                sit in iste officiis commodi q uidem hic quas.</p>
+              <hr>
+              <div class="text-center">
+                <button type="button" class="btn" data-toggle="modal" data-target="#wireless-modal"
+                  data-modal-type="wireless">Wireless Chargers</button>
+              </div>
 
-<!-- BEGIN CONTACT SECTION -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+
+  </section><!-- End Buy Ticket Section -->
+  <!-- Modal Order Form -->
+  <div id="tire-tag-modal" class="modal fade" modal-backdrop="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Tire Tags</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <h2>Lorem ipsum</h2>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
+            consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat
+            sit in iste officiis commodi q uidem hic quas.</p>
+          <ul>
+            <li>Thing</li>
+            <li>Thing</li>
+            <li>Thing</li>
+            <li>Thing</li>
+          </ul>
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+  <!-- Modal Order Form -->
+  <div id="invacare-modal" class="modal fade" modal-backdrop="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Invacare Corp.</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <h2>Invacare Case Study</h2>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
+            consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat
+            sit in iste officiis commodi q uidem hic quas.</p>
+          <ul>
+            <li>Thing</li>
+            <li>Thing</li>
+            <li>Thing</li>
+            <li>Thing</li>
+          </ul>
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+  <!-- Modal Order Form -->
+  <div id="wireless-modal" class="modal fade" modal-backdrop="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Wireless Chargers</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <h2>Wireless Chargers</h2>
+          <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
+            consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat
+            sit in iste officiis commodi q uidem hic quas.</p>
+          <ul>
+            <li>Thing</li>
+            <li>Thing</li>
+            <li>Thing</li>
+            <li>Thing</li>
+          </ul>
+        </div>
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal -->
+
+
+  <!-- BEGIN CONTACT SECTION -->
 
   <section id="contact" class="contact">
     <div class="container">
@@ -265,7 +349,7 @@
             <h2>Contact</h2>
             <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
               consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat
-              sit in iste officiis commodi quidem hic quas.</p>
+              sit in iste officiis commodi q uidem hic quas.</p>
           </div>
         </div>
 
@@ -400,12 +484,12 @@
         <!-- Grid column -->
 
       </div>
-    
 
 
 
-      </div>
-      <!-- Grid row-->
+
+    </div>
+    <!-- Grid row-->
 
     </div>
     <!-- Footer Links -->
@@ -432,9 +516,11 @@
   <script src="vendor/counterup/counterup.min.js"></script>
   <script src="vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="vendor/venobox/venobox.min.js"></script>
+  <script src="vendor/hoverIntent/hoverIntent.js"></script>
   <script src="vendor/owl.carousel/owl.carousel.min.js"></script>
   <script src="vendor/aos/aos.js"></script>
 
+  
 </body>
 
 </html>
