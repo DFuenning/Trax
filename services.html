@@ -20,215 +20,290 @@
   <link rel="stylesheet" href="css/gijgo.css">
   <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="css/slicknav.css">
-  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Crimson+Text:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Crimson+Text:wght@400;700&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="scss/main.css">
 
 </head>
 
-<body>
-  <section id="hero">
-    <!-- <div class="heroLogo">
-      <img src="img/Trax.png" alt="mainLogo">
-    </div> -->
-  <header id="header" class="d-flex align-items-center">
-    <div class="container">
-      <div class="header-container d-flex align-items-center">
-        <div class="logo mr-auto">
-          <a href="index.html"><img src="img/Traxtrans.png" alt="mainLogo"></a>
-        </div>
+<body style="background-color: rgb(226, 226, 226);">
+  <div class="container justify-content-center" style="background-color: white;">
+      <div class="row">
+          <div class="col-xl-12">
+        <section id="topbar" class="d-none d-lg-block">
+          <div class="container clearfix">
+            <div class="contact-info float-left">
+              <i class="icofont-envelope"></i><a href="mailto:contact@example.com">contact@example.com</a>
+              <i class="icofont-phone"></i> +1 330 405 4600
+            </div>
+            <div class="social-links float-right">
+              <a href="#" class="twitter"><i class="icofont-twitter"></i></a>
+              <a href="#" class="facebook"><i class="icofont-facebook"></i></a>
+              <a href="#" class="instagram"><i class="icofont-instagram"></i></a>
+              <a href="#" class="skype"><i class="icofont-skype"></i></a>
+              <a href="#" class="linkedin"><i class="icofont-linkedin"></i></i></a>
+            </div>
+          </div>
+        </section>
+        <header id="header">
+          <div class="container">
 
-        <nav class="nav-menu d-none d-lg-block">
-          <ul>
-            <li class="active"><a href="#header">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#services">Services</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
+            <div class="logo float-left">
+              <a href="index.html"><img src="img/Traxtrans.png" alt=""></a>
+              <!-- Uncomment below if you prefer to use an image logo -->
+              <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+            </div>
 
-            <li class="get-started"><a href="#contact">Contact Us</a></li>
+            <nav class="nav-menu float-right d-none d-lg-block">
+              <ul>
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="roof.html">Full Service</a></li>
+                <li class="drop-down"><a href="services.html">Tags</a>
+                  <ul>
+                    <li><a href="#">Drop Down 1</a></li>
+                    <li class="drop-down"><a href="#">Drop Down 2</a>
+                      <ul>
+                        <li><a href="#">Deep Drop Down 1</a></li>
+                        <li><a href="#">Deep Drop Down 2</a></li>
+                        <li><a href="#">Deep Drop Down 3</a></li>
+                        <li><a href="#">Deep Drop Down 4</a></li>
+                        <li><a href="#">Deep Drop Down 5</a></li>
+                      </ul>
+                    </li>
+                    <li><a href="#">Drop Down 3</a></li>
+                    <li><a href="#">Drop Down 4</a></li>
+                    <li><a href="#">Drop Down 5</a></li>
+                  </ul>
+                </li>
+                <li><a href="#contact">Contact Us</a></li>
+              </ul>
+            </nav><!-- .nav-menu -->
+
+          </div>
+        </header><!-- End Header -->
+
+        <section id="heroSolutions">
+          <!-- ======= Hero Section ======= -->
+
+          <div class="container text-center justify-content-center position-relative" data-aos="fade-in"
+            data-aos-delay="200" id="heroText">
+            <h1>Our Solutions</h1>
+            <h2>Trax tags are proven reliable, durable, and cutting-edge</h2>
+          </div>
+        </section><!-- End Hero -->
+
+
+
+        <div class="container solCont" >
+          <div class="row justify-content-center">
+            <div class="section-title-no">
+              <h2>Our Solutions</h2>
+            </div>
+          </div>
+          <div class="row justify-content-center">
+            <div class="sol-type">
+              <h2>Squiggles</h2>
+            </div>
+          </div>
+          <ul class="responsive-table pl-0">
+            <li class="table-header">
+              <div class="col col-1">Part Name</div>
+              <div class="col col-2">Tag Family</div>
+              <div class="col col-3">Dimensions (mm)</div>
+              <div class="col col-4">Application</div>
+            </li>
+            <li class="table-row">
+              <div class="col col-1" data-label="Job Id">42235</div>
+              <div class="col col-2" data-label="Customer Name">John Doe</div>
+              <div class="col col-3" data-label="Amount">$350</div>
+              <div class="col col-4" data-label="Payment Status">Pending</div>
+            </li>
+            <li class="table-row">
+              <div class="col col-1" data-label="Job Id">42442</div>
+              <div class="col col-2" data-label="Customer Name">Jennifer Smith</div>
+              <div class="col col-3" data-label="Amount">$220</div>
+              <div class="col col-4" data-label="Payment Status">Pending</div>
+            </li>
+            <li class="table-row">
+              <div class="col col-1" data-label="Job Id">42257</div>
+              <div class="col col-2" data-label="Customer Name">John Smith</div>
+              <div class="col col-3" data-label="Amount">$341</div>
+              <div class="col col-4" data-label="Payment Status">Pending</div>
+            </li>
+            <li class="table-row">
+              <div class="col col-1" data-label="Job Id">42311</div>
+              <div class="col col-2" data-label="Customer Name">John Carpenter</div>
+              <div class="col col-3" data-label="Amount">$115</div>
+              <div class="col col-4" data-label="Payment Status">Pending</div>
+            </li>
           </ul>
-        </nav><!-- .nav-menu -->
-      </div><!-- End Header Container -->
-    </div>
-  </header><!-- End Header -->
-  <!-- ======= Hero Section ======= -->
-  
-    <div class="container text-center position-relative" data-aos="fade-in" data-aos-delay="200">
-      <h1>Trax RFID</h1>
-      <h2>Changing the way we communicate with the world</h2>
-      <a href="#contact" class="btn-get-started scrollto">Contact Us</a>
-    </div>
-  </section><!-- End Hero -->
- 
-
-
-<!-- DETAIL SECTION -->
-<section class="ftco-section" id="whatDo">
-  <div class="container">
-    <div class="row justify-content-center mb-2 pb-2">
-      <div class="col-md-7 text-center heading-section ftco-animate">
-        <h2 class="whatHead">What we do</h2>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-12 nav-link-wrap mb-5 pb-md-5 pb-sm-1 ftco-animate">
-        <div class="nav ftco-animate nav-pills justify-content-center text-center" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-          <a class="nav-link active" id="v-pills-nextgen-tab" data-toggle="pill" href="#v-pills-nextgen" role="tab" aria-controls="v-pills-nextgen" aria-selected="true">RFID Inlays</a>
-
-          <a class="nav-link" id="v-pills-performance-tab" data-toggle="pill" href="#v-pills-performance" role="tab" aria-controls="v-pills-performance" aria-selected="false">RFID Tags</a>
-
-          <a class="nav-link" id="v-pills-effect-tab" data-toggle="pill" href="#v-pills-effect" role="tab" aria-controls="v-pills-effect" aria-selected="false">RFID Readers</a>
         </div>
-      </div>
-      <div class="col-md-12 align-items-center ftco-animate">
-        
-        <div class="tab-content ftco-animate" id="v-pills-tabContent">
+        <div class="container solCont">
+          <h2>Squigglets</h2>
+          <ul class="responsive-table pl-0">
+            <li class="table-header">
+              <div class="col col-1">Part Name</div>
+              <div class="col col-2">Tag Family</div>
+              <div class="col col-3">Dimensions (mm)</div>
+              <div class="col col-4">Application</div>
+            </li>
+            <li class="table-row">
+              <div class="col col-1" data-label="Job Id">42235</div>
+              <div class="col col-2" data-label="Customer Name">John Doe</div>
+              <div class="col col-3" data-label="Amount">$350</div>
+              <div class="col col-4" data-label="Payment Status">Pending</div>
+            </li>
+            <li class="table-row">
+              <div class="col col-1" data-label="Job Id">42442</div>
+              <div class="col col-2" data-label="Customer Name">Jennifer Smith</div>
+              <div class="col col-3" data-label="Amount">$220</div>
+              <div class="col col-4" data-label="Payment Status">Pending</div>
+            </li>
+            <li class="table-row">
+              <div class="col col-1" data-label="Job Id">42257</div>
+              <div class="col col-2" data-label="Customer Name">John Smith</div>
+              <div class="col col-3" data-label="Amount">$341</div>
+              <div class="col col-4" data-label="Payment Status">Pending</div>
+            </li>
+            <li class="table-row">
+              <div class="col col-1" data-label="Job Id">42311</div>
+              <div class="col col-2" data-label="Customer Name">John Carpenter</div>
+              <div class="col col-3" data-label="Amount">$115</div>
+              <div class="col col-4" data-label="Payment Status">Pending</div>
+            </li>
+          </ul>
+        </div>
+        <div class="container solCont">
+          <h2>Non-Squiggers</h2>
+          <ul class="responsive-table pl-0">
+            <li class="table-header">
+              <div class="col col-1">Part Name</div>
+              <div class="col col-2">Tag Family</div>
+              <div class="col col-3">Dimensions (mm)</div>
+              <div class="col col-4">Application</div>
+            </li>
+            <li class="table-row">
+              <div class="col col-1" data-label="Job Id">42235</div>
+              <div class="col col-2" data-label="Customer Name">John Doe</div>
+              <div class="col col-3" data-label="Amount">$350</div>
+              <div class="col col-4" data-label="Payment Status">Pending</div>
+            </li>
+            <li class="table-row">
+              <div class="col col-1" data-label="Job Id">42442</div>
+              <div class="col col-2" data-label="Customer Name">Jennifer Smith</div>
+              <div class="col col-3" data-label="Amount">$220</div>
+              <div class="col col-4" data-label="Payment Status">Pending</div>
+            </li>
+            <li class="table-row">
+              <div class="col col-1" data-label="Job Id">42257</div>
+              <div class="col col-2" data-label="Customer Name">John Smith</div>
+              <div class="col col-3" data-label="Amount">$341</div>
+              <div class="col col-4" data-label="Payment Status">Pending</div>
+            </li>
+            <li class="table-row">
+              <div class="col col-1" data-label="Job Id">42311</div>
+              <div class="col col-2" data-label="Customer Name">John Carpenter</div>
+              <div class="col col-3" data-label="Amount">$115</div>
+              <div class="col col-4" data-label="Payment Status">Pending</div>
+            </li>
+          </ul>
+        </div>
 
-          <div class="tab-pane fade show active" id="v-pills-nextgen" role="tabpanel" aria-labelledby="v-pills-nextgen-tab">
-            <div class="d-md-flex">
-              <div class="one-forth align-self-center">
-                <img src="img/RFIDtest.jpg" class="img-fluid border" alt="">
+
+
+
+
+
+
+        <!-- Footer -->
+        <footer class="page-footer footer font-small indigo" id="footer">
+
+          <!-- Footer Links -->
+          <div class="container">
+
+            <!-- Grid row-->
+            <div class="row text-center d-flex justify-content-center pt-5 mb-3">
+
+              <!-- Grid column -->
+              <div class="col-md-2 mb-3">
+                <h6 class="text-uppercase font-weight-bold">
+                  <a href="#!">About us</a>
+                </h6>
               </div>
-              <div class="one-half ml-md-5 align-self-center">
-                <h2 class="mb-4">RFID Inlays</h2>
-                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt voluptate, quibusdam sunt iste dolores consequatur</p>
+              <!-- Grid column -->
+
+              <!-- Grid column -->
+              <div class="col-md-2 mb-3">
+                <h6 class="text-uppercase font-weight-bold">
+                  <a href="#!">Products</a>
+                </h6>
               </div>
+              <!-- Grid column -->
+
+              <!-- Grid column -->
+              <div class="col-md-2 mb-3">
+                <h6 class="text-uppercase font-weight-bold">
+                  <a href="#!">Awards</a>
+                </h6>
+              </div>
+              <!-- Grid column -->
+
+              <!-- Grid column -->
+              <div class="col-md-2 mb-3">
+                <h6 class="text-uppercase font-weight-bold">
+                  <a href="#!">Help</a>
+                </h6>
+              </div>
+              <!-- Grid column -->
+
+              <!-- Grid column -->
+              <div class="col-md-2 mb-3">
+                <h6 class="text-uppercase font-weight-bold">
+                  <a href="#!">Contact</a>
+                </h6>
+              </div>
+              <!-- Grid column -->
+
             </div>
-          </div>
+            <!-- Grid row-->
+            <hr class="rgba-white-light" style="margin: 0 15%;">
 
-          <div class="tab-pane fade" id="v-pills-performance" role="tabpanel" aria-labelledby="v-pills-performance-tab">
-            <div class="d-md-flex">
-              <div class="one-forth order-last align-self-center">
-                <img src="img/RFIDtest.jpg" class="img-fluid border" alt="">
+            <!-- Grid row-->
+            <div class="row d-flex text-center justify-content-center mb-md-0 mb-4">
+
+              <!-- Grid column -->
+              <div class="col-md-8 col-12 mt-5">
+                <p style="line-height: 1.7rem">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+                  accusantium doloremque laudantium, totam rem
+                  aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
+                  explicabo.
+                  Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur.</p>
               </div>
-              <div class="one-half order-first mr-md-5 align-self-center">
-                <h2 class="mb-4">RFID Tire Tags</h2>
-                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt voluptate, quibusdam sunt iste dolores consequatur</p>
-              </div>
+              <!-- Grid column -->
+
             </div>
+
+
+
+
           </div>
+          <!-- Grid row-->
 
-          <div class="tab-pane fade" id="v-pills-effect" role="tabpanel" aria-labelledby="v-pills-effect-tab">
-            <div class="d-md-flex">
-              <div class="one-forth align-self-center">
-                <img src="img/RFIDtest.jpg" class="img-fluid border" alt="">
-              </div>
-              <div class="one-half ml-md-5 align-self-center">
-                <h2 class="mb-4">RFID Hand-Held Readers</h2>
-                <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt voluptate, quibusdam sunt iste dolores consequatur</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- END DETAIL SECTION -->
-
- <!-- ======= Cta Section ======= -->
- <section id="cta" class="cta">
-    <div class="container">
-  
-      <div class="text-center" data-aos="zoom-in">
-        <h3>Contact Us</h3>
-        <p>Please contact us for any and all business inquiries. Thank you!</p>
-        <a class="cta-btn" href="#">Contact Us</a>
-      </div>
-  
-    </div>
-  </section>
-  <!-- End Cta Section -->
-
-
-  <!-- Footer -->
-  <footer class="page-footer footer font-small indigo" id="footer">
-
-    <!-- Footer Links -->
-    <div class="container">
-
-      <!-- Grid row-->
-      <div class="row text-center d-flex justify-content-center pt-5 mb-3">
-
-        <!-- Grid column -->
-        <div class="col-md-2 mb-3">
-          <h6 class="text-uppercase font-weight-bold">
-            <a href="#!">About us</a>
-          </h6>
-        </div>
-        <!-- Grid column -->
-
-        <!-- Grid column -->
-        <div class="col-md-2 mb-3">
-          <h6 class="text-uppercase font-weight-bold">
-            <a href="#!">Products</a>
-          </h6>
-        </div>
-        <!-- Grid column -->
-
-        <!-- Grid column -->
-        <div class="col-md-2 mb-3">
-          <h6 class="text-uppercase font-weight-bold">
-            <a href="#!">Awards</a>
-          </h6>
-        </div>
-        <!-- Grid column -->
-
-        <!-- Grid column -->
-        <div class="col-md-2 mb-3">
-          <h6 class="text-uppercase font-weight-bold">
-            <a href="#!">Help</a>
-          </h6>
-        </div>
-        <!-- Grid column -->
-
-        <!-- Grid column -->
-        <div class="col-md-2 mb-3">
-          <h6 class="text-uppercase font-weight-bold">
-            <a href="#!">Contact</a>
-          </h6>
-        </div>
-        <!-- Grid column -->
-
-      </div>
-      <!-- Grid row-->
-      <hr class="rgba-white-light" style="margin: 0 15%;">
-
-      <!-- Grid row-->
-      <div class="row d-flex text-center justify-content-center mb-md-0 mb-4">
-
-        <!-- Grid column -->
-        <div class="col-md-8 col-12 mt-5">
-          <p style="line-height: 1.7rem">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-            accusantium doloremque laudantium, totam rem
-            aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
-            explicabo.
-            Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur.</p>
-        </div>
-        <!-- Grid column -->
-
-      </div>
     
 
-
-
+      <!-- Copyright -->
+      <div class="footer-copyright text-center py-3">© 2020 Copyright:
+        <a href="#">Trax, Inc.</a>
       </div>
-      <!-- Grid row-->
+      <!-- Copyright -->
 
+      </footer>
+      <!-- Footer -->
     </div>
-    <!-- Footer Links -->
-
-    <!-- Copyright -->
-    <div class="footer-copyright text-center py-3">© 2020 Copyright:
-      <a href="#">Trax, Inc.</a>
-    </div>
-    <!-- Copyright -->
-
-  </footer>
-  <!-- Footer -->
-
+  </div>
+  </div>
 
 
   <!-- End Counts Section -->
