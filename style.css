@@ -352,7 +352,7 @@ h6 {
     position: absolute;
     bottom: 0%;
     right: 0%;
-    height: 80%;
+    height: 62%;
     width: 75%;
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.75)), to(rgba(255, 255, 255, 0.75))), url("img/manufacturing.jpg");
     background: linear-gradient(rgba(255, 255, 255, 0.65), rgba(255, 255, 255, 0.65)), url("img/manufacturing.jpg");
@@ -365,8 +365,8 @@ h6 {
 #hero .btn-get-started {
     position: absolute;
     width: 25%;
-    height: 10%;
-    bottom: 25%;
+    height: 12%;
+    bottom: 20%;
     left: 50%;
     background: #005ca8;
     border-radius: 0%;
@@ -378,8 +378,8 @@ h6 {
     font-weight: 700;
     color: #ffffff;
     text-transform: uppercase;
-    text-decoration: underline;
     padding-top: 0.5%;
+    letter-spacing: .1em;
 }
 
 #hero .btn-get-started:hover {
