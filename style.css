@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Vollkorn:wght@400;600;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-
+@import url("https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Ubuntu");
 
 body {
     font-family: "Open Sans", sans-serif;
@@ -311,9 +311,11 @@ h6 {
 #hero {
     width: 100%;
     height: 60vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url("img/1375.jpg") center center;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(38, 38, 43, 0.85)), to(rgba(38, 38, 43, 0.95))),url("img/1375.jpg") center center;
     background-size: cover;
     position: relative;
+    font-family: "Open Sans Condensed" !important;
+
 }
 #hero:before {
     content: "";
@@ -329,7 +331,6 @@ h6 {
     height: 100px;
 }
 #hero h2 {
-    font-family: 'Vollkorn', serif;
     font-weight: 400;
     color: #eee;
     margin-bottom: 40px;
@@ -339,28 +340,47 @@ h6 {
     letter-spacing: 0.5px;
     text-transform: uppercase;
 }
-
+.right-triangle {
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    height: 80%;
+    width: 75%;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.75)), to(rgba(255, 255, 255, 0.75))), url("img/manufacturing.jpg");
+    background: linear-gradient(rgba(255, 255, 255, 0.65), rgba(255, 255, 255, 0.65)), url("img/manufacturing.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+    clip-path: polygon(100% 0, 0% 100%, 100% 100%);
+    z-index: 1099;
+  }
 #hero .btn-get-started {
-    font-family: "Poppins", sans-serif;
+    position: absolute;
+    width: 25%;
+    height: 10%;
+    bottom: 25%;
+    left: 50%;
+    background: #005ca8;
+    border-radius: 0%;
+    border: none;
+    padding: 10;
+    font-family: "Ubuntu";
+    font-size: 24px;
+    text-align: center;
+    font-weight: 700;
+    color: #ffffff;
     text-transform: uppercase;
-    font-weight: 500;
-    font-size: 14px;
-    letter-spacing: 1px;
-    display: inline-block;
-    padding: 8px 28px;
-    border-radius: 50px;
-    transition: 0.5s;
-    margin: 10px;
-    border: 2px solid #fff;
-    color: #fff;
+    text-decoration: underline;
+    padding-top: 0.5%;
 }
 
 #hero .btn-get-started:hover {
-    background: #005ca8;
+    background: #fff;
+    color: #000;
     border: 2px solid #005ca8;
 }
 #hero h1 {
-    font-family: 'Crimson Text', serif !important;
+    /* font-family: 'Crimson Text', serif !important; */
     font-weight: 400;
     color: #eee;
     margin-bottom: 40px;
@@ -377,8 +397,8 @@ h6 {
 /* HERO SOLUTIONS PAGE */
 #heroSolutions {
     width: 100%;
-    height: 60vh;
-    background: linear-gradient(rgba(0, 11, 77, 0.7),rgba(0, 11, 77, 0.7)), url("img/nascar.jpg") center center;
+    height: 45vh;
+    background: linear-gradient(rgba(0, 7, 44, 0.8),rgba(0, 7, 44, 0.8)), url("img/nascar.jpg") center center;
     background-size: cover;
     position: relative;
 }
@@ -441,21 +461,20 @@ h6 {
 
 }
 
-
 /* HERO ROOF PAGE */
 
 #heroRoof {
     width: 100%;
-    height: 50vh;
+    height: 25vh;
     background: linear-gradient(rgba(0, 11, 77, 0.7),rgba(0, 11, 77, 0.7)), url("img/nascar.jpg") center center;
     background-size: cover;
     position: relative;
 }
 #heroRoof #heroText {
-    padding-top: 75px;
+    padding-top: auto;
 }
 #heroSolutions #heroText {
-    padding-top: 75px;
+    padding-top: auto;
 }
 
 #heroRoof:before {
@@ -751,9 +770,7 @@ h6 {
     margin-bottom: auto;
 } */
 
-.why-us {
-    height: 80vh;
-}
+
 
 .why-us .content p {
     margin-bottom: 30px;
@@ -813,7 +830,7 @@ h6 {
 
 .cta {
     padding: 50px auto;
-    background: linear-gradient(rgba(2, 2, 2, 0.7), rgba(0, 0, 0, 0.7)), url("../img/cta-bg.jpg") fixed center center;
+    background: linear-gradient(rgba(2, 2, 2, 0.7), rgba(0, 0, 0, 0.7)), url("img/design.jpg") fixed center center;
     background-size: cover;
     padding: 60px 0;
 }
