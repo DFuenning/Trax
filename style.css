@@ -1387,8 +1387,8 @@ section {
 }
 
 #chipImg img{
-    height: 50vh;
-    width: 25vw;
+    height: 80%;
+    width: 80%;
     text-align: center;
     padding-right: 15px;
 }
