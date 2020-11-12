@@ -29,8 +29,6 @@ h6 {
 
 
 
-
-
 /*--------------------------------------------------------------
 # MISC ITEMS
 --------------------------------------------------------------*/
@@ -41,6 +39,27 @@ h6 {
 }
 
 
+
+#header {
+    height: 70px;
+    transition: all 0.5s;
+    transition: all 0.5s;
+    padding: 0;
+    background: #fff;
+    z-index: 997;
+}
+
+#header.header-scrolled {
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
+}
+
+
+#header .logo img {
+    padding: 0;
+    margin: 0;
+    max-height: 70px;
+}
+
 /*--------------------------------------------------------------
 # Top Bar
 --------------------------------------------------------------*/
@@ -50,7 +69,6 @@ h6 {
     border-bottom: 1px solid #eee;
     font-size: 14px;
 }
-
 
 #topbar .contact-info a {
     line-height: 1;
@@ -84,15 +102,7 @@ h6 {
     color: #428bca;
 }
 
-
 /* Desktop Navigation */
-
-.logo img {
-    height: 50px;
-    width: 100px;
-}
-
-
 .nav-menu,
 .nav-menu * {
     margin: 0;
@@ -306,18 +316,21 @@ h6 {
     color: #fff;
 }
 
+/* END NAVBAR */
 /* HERO SECTION */
 /* HERO MAIN PAGE */
 #hero {
     width: 100%;
     height: 60vh;
-    background: -webkit-gradient(linear, left top, left bottom, from(rgba(38, 38, 43, 0.85)), to(rgba(38, 38, 43, 0.95))),url("img/1375.jpg") center center;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(38, 38, 43, 0.85)), to(rgba(38, 38, 43, 0.95))), url("img/manufacturing.jpg") center center;
     background-size: cover;
-    background-position: left -200px bottom 100px !important;
+    background-position: center 50px right;
     position: relative;
     font-family: "Open Sans", sans-serif !important;
+    background-repeat: no-repeat;
 
 }
+
 #hero:before {
     content: "";
     position: absolute;
@@ -335,6 +348,7 @@ h6 {
     width: 130px;
     height: 100px;
 }
+
 #hero h2 {
     font-weight: 400;
     color: #eee;
@@ -344,8 +358,9 @@ h6 {
     font-family: "Open Sans", sans-serif;
     letter-spacing: 0.5px;
     text-transform: uppercase;
-    
+
 }
+
 
 
 .right-triangle {
@@ -355,20 +370,21 @@ h6 {
     height: 62%;
     width: 75%;
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.75)), to(rgba(255, 255, 255, 0.75))), url("img/manufacturing.jpg");
-    background: linear-gradient(rgba(255, 255, 255, 0.65), rgba(255, 255, 255, 0.65)), url("img/manufacturing.jpg");
+    background: #005ca8;
     background-repeat: no-repeat;
     background-size: cover;
     -webkit-clip-path: polygon(100% 0, 0% 100%, 100% 100%);
     clip-path: polygon(100% 0, 0% 100%, 100% 100%);
     z-index: 1099;
-  }
+}
+
 #hero .btn-get-started {
     position: absolute;
     width: 25%;
     height: 12%;
     bottom: 20%;
     left: 50%;
-    background: #005ca8;
+    background: #000000;
     border-radius: 0%;
     border: none;
     padding: 10;
@@ -387,6 +403,7 @@ h6 {
     color: #000;
     border: 2px solid #005ca8;
 }
+
 #hero h1 {
     /* font-family: 'Crimson Text', serif !important; */
     font-weight: 400;
@@ -394,25 +411,45 @@ h6 {
     margin-bottom: 40px;
     font-size: 60px;
     font-weight: 500;
-   
+
     letter-spacing: 0.5px;
     text-transform: uppercase;
 }
 
+@media (max-width: 992px) {
+    .right-triangle {
+        display: none;
+    }
 
+    #hero {
+        padding-top: 0;
+        background-position: center;
+    }
+
+    #heroText {
+        text-align: center;
+    }
+
+    #heroText .section-title h2::after {
+        display: none;
+    }
+
+}
 
 
 /* HERO SOLUTIONS PAGE */
 #heroSolutions {
     width: 100%;
     height: 45vh;
-    background: linear-gradient(rgba(0, 7, 44, 0.8),rgba(0, 7, 44, 0.8)), url("img/nascar.jpg") center center;
+    background: linear-gradient(rgba(0, 7, 44, 0.8), rgba(0, 7, 44, 0.8)), url("img/nascar.jpg") center center;
     background-size: cover;
     position: relative;
 }
+
 #heroSolutions #heroText {
     padding-top: 75px;
 }
+
 #heroSolutions #heroText {
     padding-top: 75px;
 }
@@ -445,6 +482,7 @@ h6 {
     width: 130px;
     height: 100px;
 }
+
 #heroSolutions h1 {
     font-family: 'Crimson Text', serif !important;
     font-weight: 400;
@@ -456,6 +494,7 @@ h6 {
     letter-spacing: 0.5px;
     text-transform: uppercase;
 }
+
 #heroSolutions h2 {
     font-family: 'Vollkorn', serif;
     font-weight: 400;
@@ -474,14 +513,16 @@ h6 {
 #heroRoof {
     width: 100%;
     height: 25vh;
-    background: linear-gradient(rgba(0, 11, 77, 0.8),rgba(0, 11, 77, 0.8)), url("img/nascar.jpg") center center;
+    background: linear-gradient(rgba(0, 11, 77, 0.8), rgba(0, 11, 77, 0.8)), url("img/nascar.jpg") center center;
     background-size: cover;
     position: relative;
     background-attachment: fixed;
 }
+
 #heroRoof #heroText {
     padding-top: auto;
 }
+
 #heroSolutions #heroText {
     padding-top: auto;
 }
@@ -514,6 +555,7 @@ h6 {
     width: 130px;
     height: 100px;
 }
+
 #heroRoof h1 {
     font-family: 'Crimson Text', serif !important;
     font-weight: 400;
@@ -525,6 +567,7 @@ h6 {
     letter-spacing: 0.5px;
     text-transform: uppercase;
 }
+
 #heroRoof h2 {
     font-family: 'Vollkorn', serif;
     font-weight: 400;
@@ -539,6 +582,73 @@ h6 {
 
 
 }
+
+
+/* NEW HERO TESTING  */
+
+
+.newHero .row {
+    position: relative;
+    transform: translatey(60%);
+    top: -60%;
+}
+
+.newHero {
+    width: 100%;
+    height: 70vh;
+    background: linear-gradient(#000000a1, #000000a1), url("img/27122.jpg") center center;
+    background-size: cover;
+    position: relative;
+    background-repeat: no-repeat;
+    padding: 0;
+}
+
+
+
+#newCard {
+    height: 350px;
+}
+
+.newHero .newHeroText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.newHeroText h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 56px;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.newHeroText h5 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 30px;
+}
+.buttonmorph {
+    color: #fff;
+    text-transform: uppercase;
+    background: #ffffff50;
+    padding: 20px;
+    height: 70px;
+    width: auto;
+    border: 2px solid #005aca !important;
+    border-radius: 6px;
+    display: inline-block;
+    transition: all 0.3s ease 0s;
+}
+
+.buttonmorph:hover {
+    color: rgb(81, 179, 209)!important;
+    border-radius: 50px;
+    border-color: rgb(81, 179, 209)!important;
+    transition: all 0.3s ease 0s;
+}
+
 /* HERO ALL PAGES */
 
 .heroLogo img {
@@ -558,7 +668,8 @@ h6 {
     #hero {
         background-attachment: fixed;
     }
-    #heroSolutions  {
+
+    #heroSolutions {
         background-attachment: fixed;
     }
 }
@@ -577,15 +688,15 @@ h6 {
         line-height: 36px;
     }
 
-    #heroSolutions  {
+    #heroSolutions {
         height: 100vh;
     }
 
-    #heroSolutions  .container {
+    #heroSolutions .container {
         padding-top: 60px;
     }
 
-    #heroSolutions  h1 {
+    #heroSolutions h1 {
         font-size: 32px;
         line-height: 36px;
     }
@@ -595,13 +706,16 @@ h6 {
 
 #case-studies {
     padding: 60px 0;
-}
+    background: linear-gradient(168deg, #ffffff 55%, #030013 0);
+}    
+
 
 #case-studies .card {
     border: none;
     border-radius: 5px;
     transition: all 0.3s ease-in-out;
-    box-shadow: 0 10px 25px 0 rgba(6, 12, 34, 0.1);
+    box-shadow: 0 10px 25px 0 rgba(97, 39, 0, 0.603);
+    margin: auto 10px;
 }
 
 #case-studies .card:hover {
@@ -685,7 +799,7 @@ h6 {
 #aboutHeading {
     display: flex;
     justify-content: center;
-    padding-bottom: 45px;
+    padding-bottom: 15px;
 }
 
 #aboutHeading h1:after {
@@ -739,7 +853,7 @@ h6 {
 }
 
 .counts {
-    background: #005ca8;
+    background: #030013;
     padding: 40px 0 20px 0;
     color: #fff;
 }
@@ -838,96 +952,99 @@ h6 {
 
 
 body {
-	font-family: 'Raleway', sans-serif;
-	background-color: #8186a3;
+    font-family: 'Raleway', sans-serif;
 }
 
 .contenedor {
-	height: 100%;
-	padding: 0 0;
+    height: 100%;
+    padding: 0 0;
 }
 
 .servIndex {
     margin: 60px auto !important;
+
 }
 
 .servIndex h1 {
-	color: #FCFBFA;
+    color: #FCFBFA;
+
 }
 
 .container_img {
-	background-color: rgba(57, 62, 93, 0.7);
-	padding: 0;
-	overflow: hidden;
-	max-width: 350px;
-	margin: 5px;
+    background-color: rgba(57, 62, 93, 0.7);
+    padding: 0;
+    overflow: hidden;
+    margin: 5px;
 }
 
 .container_img article {
-	padding: 10%;
-	position: absolute;
-	bottom: 0;
-	z-index: 1;
-	-webkit-transition: all 0.5s ease;
-	-moz-transition: all 0.5s ease;
-	-o-transition: all 0.5s ease;
-	-ms-transition: all 0.5s ease;
-	transition: all 0.5s ease;
+    padding: 10%;
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    transition: all 0.5s ease;
 }
 
+
+
 .container_img h2 {
-	color: #fff;
-	font-weight: 800;
-	font-size: 25px;
-	border-bottom: #fff solid 1px;
+    color: #fff;
+    font-weight: 800;
+    font-size: 25px;
+    border-bottom: #fff solid 1px;
 }
 
 .container_img h4 {
-	font-weight: 300;
-	color: #fff;
-	font-size: 16px;
+    font-weight: 300;
+    color: #fff;
+    font-size: 16px;
 }
+
 
 .container_img img {
     width: 100%;
     height: 100%;
-	top: 0;
-	left: 0;
-	opacity: 0.4;
-	-webkit-transition: all 4s ease;
-	-moz-transition: all 4s ease;
-	-o-transition: all 4s ease;
-	-ms-transition: all 4s ease;
-	transition: all 4s ease;
+    top: 0;
+    left: 0;
+    opacity: 0.4;
+    -webkit-transition: all 4s ease;
+    -moz-transition: all 4s ease;
+    -o-transition: all 4s ease;
+    -ms-transition: all 4s ease;
+    transition: all 4s ease;
 }
 
 .More {
-	background-color: #FEB66C;
-	position: absolute;
-	width: 100%;
-	height: 70px;
-	bottom: 0;
-	z-index: 1;
-	opacity: 0;
-	transform: translate(0px, 70px);
-	-webkit-transform: translate(0px, 70px);
-	-moz-transform: translate(0px, 70px);
-	-o-transform: translate(0px, 70px);
-	-ms-transform: translate(0px, 70px);
-	-webkit-transition: all 0.2s ease-in-out;
-	-moz-transition: all 0.2s ease-in-out;
-	-o-transition: all 0.2s ease-in-out;
-	-ms-transition: all 0.2s ease-in-out;
-	transition: all 0.2s ease-in-out;
+    background-color: #FEB66C;
+    position: absolute;
+    width: 100%;
+    height: 70px;
+    bottom: 0;
+    z-index: 1;
+    opacity: 0;
+    transform: translate(0px, 70px);
+    -webkit-transform: translate(0px, 70px);
+    -moz-transform: translate(0px, 70px);
+    -o-transform: translate(0px, 70px);
+    -ms-transform: translate(0px, 70px);
+    -webkit-transition: all 0.2s ease-in-out;
+    -moz-transition: all 0.2s ease-in-out;
+    -o-transition: all 0.2s ease-in-out;
+    -ms-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
 }
 
 .More span {
-	font-size: 40px;
-	color: #fff;
-	position: relative;
-	margin: 0 auto;
-	width: 100%;
-	top: 13px;
+    font-size: 40px;
+    color: #fff;
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    top: 13px;
 }
 
 #click {
@@ -937,29 +1054,29 @@ body {
 /*hovers*/
 
 .container_img:hover {
-	cursor: pointer;
+    cursor: pointer;
 }
 
 .container_img:hover img {
-	opacity: 0.1;
-	transform: scale(1.5);
+    opacity: 0.1;
+    transform: scale(1.5);
 }
 
 .container_img:hover article {
-	transform: translate(2px, -69px);
-	-webkit-transform: translate(2px, -69px);
-	-moz-transform: translate(2px, -69px);
-	-o-transform: translate(2px, -69px);
-	-ms-transform: translate(2px, -69px);
+    transform: translate(2px, -69px);
+    -webkit-transform: translate(2px, -69px);
+    -moz-transform: translate(2px, -69px);
+    -o-transform: translate(2px, -69px);
+    -ms-transform: translate(2px, -69px);
 }
 
 .container_img:hover .More {
-	transform: translate(0px, 0px);
-	-webkit-transform: translate(0px, 0px);
-	-moz-transform: translate(0px, 0px);
-	-o-transform: translate(0px, 0px);
-	-ms-transform: translate(0px, 0px);
-	opacity: 1;
+    transform: translate(0px, 0px);
+    -webkit-transform: translate(0px, 0px);
+    -moz-transform: translate(0px, 0px);
+    -o-transform: translate(0px, 0px);
+    -ms-transform: translate(0px, 0px);
+    opacity: 1;
 }
 
 
@@ -968,8 +1085,7 @@ body {
 
 .cta {
     padding: 50px auto;
-    background: linear-gradient(rgba(2, 2, 2, 0.7), rgba(0, 0, 0, 0.7)), url("img/design.jpg") fixed center center;
-    background-size: cover;
+    background: #030013;
     padding: 60px 0;
 }
 
@@ -1153,6 +1269,26 @@ section {
     left: 0;
 }
 
+.section-title-serve h2 {
+    font-size: 32px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    padding-bottom: 0;
+    position: relative;
+}
+
+.section-title-serve h2::after {
+    content: '';
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 3px;
+    background: #005ca8;
+    bottom: 0;
+    left: 0;
+}
+
 .section-title p {
     margin-bottom: 0;
 }
@@ -1191,7 +1327,9 @@ section {
 /* CONTACT US */
 
 #contact {
-    margin-top: 140px;
+    padding-top: 140px;
+    background: linear-gradient(-168deg, #030013 55%, #fff 0);
+
 }
 
 .contact .info {
@@ -1200,6 +1338,9 @@ section {
     background: #fff;
     box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
 }
+
+
+
 
 .contact .info i {
     font-size: 20px;
@@ -1350,7 +1491,6 @@ section {
     font-size: 14px;
     background: #f1f0f2;
     padding: 10px 0 30px 0;
-    margin-top: 30px;
     background: #f9f8f9;
 }
 
@@ -1372,7 +1512,7 @@ section {
     width: 20%;
     height: 3px;
     background: #005ca8;
-    
+
 }
 
 .MainCont {
@@ -1386,12 +1526,13 @@ section {
     text-align: center;
 }
 
-#chipImg img{
+#chipImg img {
     height: 80%;
     width: 80%;
     text-align: center;
     padding-right: 15px;
 }
+
 #chipImg {
     text-align: center;
 }
@@ -1400,7 +1541,41 @@ section {
     line-height: 2rem;
 }
 
+.traxWay .row {
+    height: 300px;
+}
 
+.traxWay #traxText {
+    padding: 60px 0;
+    background: linear-gradient(#005ca8, #005ca859);
+    color: #fff;
+    text-align: center;
+}
+
+.traxWay #traxText h2 {
+    font-size: 36px;
+}
+
+.traxWay #traxText h5 {
+    line-height: 2rem;
+}
+
+.traxWay #traxText h2::after {
+    content: '';
+    display: block;
+    width: 27%;
+    margin-left: 36%;
+    height: 3px;
+    background: #fff;
+}
+
+.traxWay #aboutChip {
+    background-image: url("img/manufacturing.jpg");
+    background-position: top 100px left 250px;
+    background-attachment: fixed;
+    background-size: cover;
+
+}
 
 /*--------------------------------------------------------------
 # Full Services PAGE
@@ -1422,3 +1597,47 @@ section {
 #left img {
     text-align: left;
 }
+
+.responsive-table .table-row:hover {
+    background-color: #005ca84d;
+}
+
+/* line 27, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_btn.scss */
+.boxed-btn3 {
+    color: #222222;
+    display: inline-block;
+    padding: 13px 44px;
+    font-size: 16px;
+    font-weight: 600;
+    border: 0;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    text-align: center;
+    text-transform: capitalize;
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+    background: #fff;
+    font-family: "Open Sans", sans-serif;
+    cursor: pointer;
+}
+
+/* line 41, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_btn.scss */
+.boxed-btn3:hover {
+    background: #3CC78F;
+    color: #fff;
+}
+
+/* line 45, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_btn.scss */
+.boxed-btn3:focus {
+    outline: none;
+}
+
+/* line 48, ../../Arafath/CL/january 2020/242. charity/HTML/scss/_btn.scss */
+.boxed-btn3.large-width {
+    width: 220px;
+}
+
+
