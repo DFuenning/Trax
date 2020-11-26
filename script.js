@@ -302,11 +302,7 @@
 
     };
     
-    setTimeout(function() {
-        $('card_body').show()
-      }, 1000);
-
-
+ 
 
 
 
