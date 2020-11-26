@@ -300,6 +300,15 @@
 			aos_init();
 		});
 
-	};
+    };
+    
+    setTimeout(function() {
+        $('card_body').show()
+      }, 1000);
+
+
+
+
+
 
 })(jQuery);
