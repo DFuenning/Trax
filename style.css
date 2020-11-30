@@ -441,8 +441,8 @@ h6 {
 
 #heroRoof {
     width: 100%;
-    height: 200px;
-    background: linear-gradient(rgba(37, 37, 37, 0.8), rgba(37, 37, 37, 0.8)), url("img/27122.jpg") right center;
+    height: 80px;
+    background: linear-gradient(rgba(37, 37, 37, 0.8), rgba(37, 37, 37, 0.8)), url("img/blog.jpeg") right center;
     background-size: cover;
     position: relative;
     background-attachment: fixed;
@@ -490,8 +490,9 @@ h6 {
     font-family: 'Crimson Text', serif !important;
     font-weight: 400;
     color: #eee;
+    padding-top: 10px;
     margin-bottom: 40px;
-    font-size: 60px;
+    font-size: 32px;
     font-weight: 500;
     font-family: "Open Sans", sans-serif;
     letter-spacing: 0.5px;
@@ -583,7 +584,7 @@ h6 {
 .heroLogo img {
     width: 200px;
     height: 120px;
-    padding-top: 25px;
+    padding-top: 5px;
     padding-left: 25px;
 
 }
@@ -592,9 +593,9 @@ h6 {
 
 .caseHero {
     width: 100%;
-    height: 200px;
-    background: url(img/traxHead.jpeg);
-
+    height: 70px;
+    background: #000088;
+    padding-top: 15px;
 }
 
 
@@ -614,13 +615,9 @@ h6 {
     color: transparent; */
 color: #FCFBFA;
     margin-bottom: 40px;
-    font-size: 84px;
+    font-size: 32px;
     letter-spacing: 0.5px;
     text-transform: uppercase;
-}
-
-.caseHero .row {
-    text-align: center;
 }
 
 
@@ -1764,7 +1761,7 @@ service section style
     color: #000;
 }
 
-.buttonCase button {
+.buttonCase .btn {
     font-size: 15px;
     border-radius: 50px;
     padding: 10px 40px;
@@ -1774,7 +1771,7 @@ service section style
     color: #fff;
 }
 
-.buttonCase button:hover {
+.buttonCase .btn:hover {
     background-color: #fff;
     color: #005ca8;
 }
@@ -1941,135 +1938,134 @@ service section style
 --------------------------------------------------------------*/
 .blog {
     padding: 40px 0 20px 0;
-}
-
-.blog .entry {
+  }
+  
+  .blog .entry {
     padding: 30px;
     margin-bottom: 60px;
     box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
-}
-
-.blog .entry .entry-img {
+  }
+  
+  .blog .entry .entry-img {
     max-height: 400px;
     margin: -30px -30px 20px -30px;
     overflow: hidden;
-}
-
-.blog .entry .entry-title {
+  }
+  
+  .blog .entry .entry-title {
     font-size: 28px;
     font-weight: bold;
     padding: 0;
     margin: 0 0 20px 0;
-}
-
-.blog .entry .entry-title a {
+  }
+  
+  .blog .entry .entry-title a {
     color: #111;
     transition: 0.3s;
-}
-
-.blog .entry .entry-title a:hover {
-    color: #005ac8;
-}
-
-.blog .entry .entry-meta {
+  }
+  
+  .blog .entry .entry-title a:hover {
+    color: #1bbd36;
+  }
+  
+  .blog .entry .entry-meta {
     margin-bottom: 15px;
     color: #aaaaaa;
-}
-
-.blog .entry .entry-meta ul {
+  }
+  
+  .blog .entry .entry-meta ul {
     display: flex;
     flex-wrap: wrap;
     list-style: none;
     padding: 0;
     margin: 0;
-}
-
-.blog .entry .entry-meta ul li+li {
+  }
+  
+  .blog .entry .entry-meta ul li + li {
     padding-left: 20px;
-}
-
-.blog .entry .entry-meta i {
+  }
+  
+  .blog .entry .entry-meta i {
     font-size: 14px;
     padding-right: 4px;
-}
-
-.blog .entry .entry-meta a {
+  }
+  
+  .blog .entry .entry-meta a {
     color: #5e5e5e;
     font-size: 14px;
     display: inline-block;
     line-height: 20px;
     transition: 0.3s;
-}
-
-.blog .entry .entry-meta a:hover {
-    color: #005ac8;
-}
-
-.blog .entry .entry-content p {
+  }
+  
+  .blog .entry .entry-meta a:hover {
+    color: #1bbd36;
+  }
+  
+  .blog .entry .entry-content p {
     line-height: 24px;
-}
-
-.blog .entry .entry-content .read-more {
+  }
+  
+  .blog .entry .entry-content .read-more {
     -moz-text-align-last: right;
     text-align-last: right;
-}
-
-.blog .entry .entry-content .read-more a {
+  }
+  
+  .blog .entry .entry-content .read-more a {
     display: inline-block;
-    background: #008ac5;
+    background: #1bbd36;
     color: #fff;
     padding: 7px 25px;
     transition: 0.3s;
     font-size: 14px;
     border-radius: 4px;
-}
-
-.blog .entry .entry-content .read-more a:hover {
-    background: #fff;
-    color: #000;
-}
-
-.blog .entry .entry-content h3 {
+  }
+  
+  .blog .entry .entry-content .read-more a:hover {
+    background: #1ed33c;
+  }
+  
+  .blog .entry .entry-content h3 {
     font-size: 22px;
     margin-top: 30px;
     font-weight: bold;
-}
-
-.blog .entry .entry-content blockquote {
+  }
+  
+  .blog .entry .entry-content blockquote {
     overflow: hidden;
     background-color: #fafafa;
     padding: 60px;
     position: relative;
     text-align: center;
     margin: 20px 0;
-}
-
-.blog .entry .entry-content blockquote p {
+  }
+  
+  .blog .entry .entry-content blockquote p {
     color: #4d4643;
     line-height: 1.6;
     margin-bottom: 0;
     font-style: italic;
     font-weight: 500;
     font-size: 22px;
-}
-
-.blog .entry .entry-content blockquote .quote-left {
+  }
+  
+  .blog .entry .entry-content blockquote .quote-left {
     position: absolute;
     left: 20px;
     top: 20px;
     font-size: 36px;
     color: #e7e7e7;
-}
-
-.blog .entry .entry-content blockquote .quote-right {
+  }
+  
+  .blog .entry .entry-content blockquote .quote-right {
     position: absolute;
     right: 20px;
     bottom: 20px;
     font-size: 36px;
     color: #e7e7e7;
-}
-
-.blog .entry .entry-content blockquote::after {
+  }
+  
+  .blog .entry .entry-content blockquote::after {
     content: '';
     position: absolute;
     left: 0;
@@ -2079,207 +2075,67 @@ service section style
     background-color: #111;
     margin-top: 20px;
     margin-bottom: 20px;
-}
-
-.blog .entry .entry-footer {
+  }
+  
+  .blog .entry .entry-footer {
     padding-top: 10px;
     border-top: 1px solid #e6e6e6;
-}
-
-.blog .entry .entry-footer i {
+  }
+  
+  .blog .entry .entry-footer i {
     color: #5e5e5e;
     display: inline;
-}
-
-.blog .entry .entry-footer a {
+  }
+  
+  .blog .entry .entry-footer a {
     color: #8b8b8b;
     transition: 0.3s;
-}
-
-.blog .entry .entry-footer a:hover {
-    color: #005ac8;
-}
-
-.blog .entry .entry-footer .cats {
+  }
+  
+  .blog .entry .entry-footer a:hover {
+    color: #1bbd36;
+  }
+  
+  .blog .entry .entry-footer .cats {
     list-style: none;
     display: inline;
     padding: 0 20px 0 0;
     font-size: 14px;
-}
-
-.blog .entry .entry-footer .cats li {
+  }
+  
+  .blog .entry .entry-footer .cats li {
     display: inline-block;
-}
-
-.blog .entry .entry-footer .tags {
+  }
+  
+  .blog .entry .entry-footer .tags {
     list-style: none;
     display: inline;
     padding: 0;
     font-size: 14px;
-}
-
-.blog .entry .entry-footer .tags li {
+  }
+  
+  .blog .entry .entry-footer .tags li {
     display: inline-block;
-}
-
-.blog .entry .entry-footer .tags li+li::before {
+  }
+  
+  .blog .entry .entry-footer .tags li + li::before {
     padding-right: 6px;
     color: #6c757d;
     content: ",";
-}
-
-.blog .entry .entry-footer .share {
+  }
+  
+  .blog .entry .entry-footer .share {
     font-size: 16px;
-}
-
-.blog .entry .entry-footer .share i {
+  }
+  
+  .blog .entry .entry-footer .share i {
     padding-left: 5px;
-}
-
-.blog .entry-single {
+  }
+  
+  .blog .entry-single {
     margin-bottom: 30px;
-}
-
-.blog .blog-author {
-    padding: 20px;
-    margin-bottom: 30px;
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
-}
-
-.blog .blog-author img {
-    width: 120px;
-}
-
-.blog .blog-author h4 {
-    margin-left: 140px;
-    font-weight: 600;
-    font-size: 22px;
-    margin-bottom: 0px;
-    padding: 0;
-}
-
-.blog .blog-author .social-links {
-    margin: 0 0 5px 140px;
-}
-
-.blog .blog-author .social-links a {
-    color: #777777;
-}
-
-.blog .blog-author p {
-    margin-left: 140px;
-    font-style: italic;
-    color: #bfb9b6;
-}
-
-.blog .blog-comments {
-    margin-bottom: 30px;
-}
-
-.blog .blog-comments .comments-count {
-    font-weight: bold;
-}
-
-.blog .blog-comments .comment {
-    margin-top: 30px;
-    position: relative;
-}
-
-.blog .blog-comments .comment .comment-img {
-    width: 50px;
-}
-
-.blog .blog-comments .comment h5 {
-    margin-left: 65px;
-    font-size: 16px;
-    margin-bottom: 2px;
-}
-
-.blog .blog-comments .comment h5 a {
-    font-weight: bold;
-    color: #4d4643;
-    transition: 0.3s;
-}
-
-.blog .blog-comments .comment h5 a:hover {
-    color: #005ac8;
-}
-
-.blog .blog-comments .comment h5 .reply {
-    padding-left: 10px;
-    color: #111;
-}
-
-.blog .blog-comments .comment time {
-    margin-left: 65px;
-    display: block;
-    font-size: 14px;
-    color: #777777;
-    margin-bottom: 5px;
-}
-
-.blog .blog-comments .comment p {
-    margin-left: 65px;
-}
-
-.blog .blog-comments .comment.comment-reply {
-    padding-left: 40px;
-}
-
-.blog .blog-comments .reply-form {
-    margin-top: 30px;
-    padding: 30px;
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
-}
-
-.blog .blog-comments .reply-form h4 {
-    font-weight: bold;
-    font-size: 22px;
-}
-
-.blog .blog-comments .reply-form p {
-    font-size: 14px;
-}
-
-.blog .blog-comments .reply-form input {
-    border-radius: 0;
-    padding: 20px 10px;
-    font-size: 14px;
-    border-radius: 4px;
-}
-
-.blog .blog-comments .reply-form input:focus {
-    box-shadow: none;
-    border-color: #005ac8;
-}
-
-.blog .blog-comments .reply-form textarea {
-    border-radius: 0;
-    padding: 10px 10px;
-    font-size: 14px;
-    border-radius: 4px;
-}
-
-.blog .blog-comments .reply-form textarea:focus {
-    box-shadow: none;
-    border-color: #005ac8;
-}
-
-.blog .blog-comments .reply-form .form-group {
-    margin-bottom: 25px;
-}
-
-.blog .blog-comments .reply-form .btn-primary {
-    padding: 8px 20px;
-    border: 0;
-    border-radius: 4px;
-    background-color: #005ac8;
-}
-
-.blog .blog-comments .reply-form .btn-primary:hover {
-    background-color: #005ac8;
-}
-
+  }
+  
 #heroBlog {
     width: 100%;
     height: 100px;
@@ -2405,4 +2261,38 @@ service section style
 
 .event-list .card:hover .card-body .card-title a {
     color: #006fbe;
+}
+
+
+.studyHero {
+    width: 100%;
+    height: 120px;
+    background: url(img/traxHead.jpeg);
+    padding-top: 20px;
+}
+
+
+
+.studyHero h5 {
+    color: #000000;
+    text-align: center;
+    font-size: 28px;
+}
+
+.studyHero h1 {
+    font-weight: 700;
+    /* background-image: url(img/27122.jpg);
+    background-position: bottom right;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent; */
+color: #FCFBFA;
+    margin-bottom: 40px;
+    font-size: 64px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+}
+
+.studyHero .row {
+    text-align: center;
 }
