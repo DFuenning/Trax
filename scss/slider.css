@@ -61,10 +61,6 @@
 
 
 #catCont .card:hover .card_body{
-  animation: displayText 1s infinite;
-  /* visibility: hidden;
-  opacity: 1;
-  transition: visibility 0s, opacity 0.5s, linear; */
   text-align: center;
   position: absolute;
   transition-delay: 1s;
@@ -73,10 +69,7 @@
   color: white;
   background: rgba(0, 0, 0, 0.5);
 }
-@keyframes displayText {
-  from {display: none;}
-  to {display: contents;}
-}
+
 #catCont .card:hover {
   -webkit-box-flex: 10;
       -ms-flex-positive: 10;
