@@ -10,7 +10,7 @@
     <link href="vendor/remixicon/remixicon.css" rel="stylesheet">
     <link href="vendor/icofont/icofont.min.css" rel="stylesheet">
     <link href="vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    
     <link rel="stylesheet" href="css/owl.carousel.min.css">
     <link rel="stylesheet" href="css/magnific-popup.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
@@ -22,11 +22,13 @@
     <link rel="stylesheet" href="css/slicknav.css">
     <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Crimson+Text:wght@400;700&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="scss/slider.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  
+
     <!-- ======= Header ======= -->
     <header id="header">
         <div class="container">
@@ -35,7 +37,7 @@
                 <a href="index.html"><img src="img/updateLogo.png" alt=""></a>
             </div>
 
-            <nav class="nav-menu float-right d-none d-lg-block">
+            <nav class="nav-menu float-right d-none d-lg-block h-100">
                 <ul>
                     <li class="active"><a href="index.html">Home</a></li>
                     <li><a href="about.html">About Us</a></li>
@@ -44,7 +46,7 @@
                     <li><a href="case.html">Case Studies</a></li>
                     <li><a href="blog.html">News</a></li>
                     <li><a href="contact.html">Contact Us</a></li>
-                    
+
 
                 </ul>
             </nav><!-- .nav-menu -->
@@ -70,8 +72,45 @@
         </div>
     </section>
 
+    <!-- ======= SLIDER Section ======= -->
+    <div class="container contenedor text-center pt-5">
+        <div class="row justify-content-center">
+            <div class="section-title-no">
+                <h2>What We Do</h2>
+            </div>
+        </div>
+    </div>
+    <section class="slideBox">
+        <div class="container" id="catCont">
+            <div class="card">
+                <img src="img/roll.jpeg">
+                <div class="card__head">Inlays</div>
+            </div>
+            <div class="card">
+                <img src="img/NwHero.jpg">
+                <div class="card__head">Tire Tags</div>
+            </div>
+            <div class="card">
+                <img src="img/capabilities.jpeg">
+                <div class="card__head">Custom Design</div>
+                <!-- <div class="card_body">Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
+                            consequuntur magni dolores eos qui ratione voluptatem sequi </div>
+            -->
+            </div>
+            <div class="card">
+                <img src="img/design.jpg">
+                <div class="card__head">IC Packaging</div>
+            </div>
+            <div class="card">
+                <img src="img/space.jpg">
+                <div class="card__head">Characterization</div>
+            </div>
+        </div>
+    </section>
+    <!-- END SLIDER SECTION -->
+
     <!-- Why us -->
-    <section id="why_us">
+    <!-- <section id="why_us">
         <div class="container text-center">
             <div class="row text-center">
                 <div class="col-8 offset-2">
@@ -126,21 +165,33 @@
         </div>
 
 
-    </section>
+    </section> -->
 
+  <!-- ======= Cta Section ======= -->
+  <section id="cta" class="cta">
+    <div class="container">
 
+        <div class="text-center" data-aos="zoom-in">
+            <h3>Contact Us</h3>
+            <p>Please contact us for any and all business inquiries. Thank you!</p>
+            <a class="cta-btn" href="#">Contact Us</a>
+        </div>
+
+    </div>
+</section>
+<!-- End Cta Section -->
 
     <section class="servIndex">
         <div class="container contenedor text-center">
             <div class="row justify-content-center pb-4">
                 <div class="section-title-no">
-                    <h2>Our Services</h2>
+                    <h2>Our Products</h2>
                 </div>
             </div>
         </div>
         <div class="container-fluid" style="padding: 0;">
             <div class="row justify-content-center">
-                <div class="col-xl-3 col-lg-4 col-md-10 md-offset-1 col-sm-12 col-xs-12 container_img ">
+                <div class="col-xl-5 col-lg-5 col-md-10 md-offset-1 col-sm-12 col-xs-12 container_img ">
                     <div class="More text-center">
                         <span id="click">Find Out More Here <br><i class="icofont-location-arrow"></i></span>
                     </div>
@@ -150,7 +201,7 @@
                     </article>
                     <img src="img/roll.jpeg" alt="">
                 </div>
-                <div class="col-xl-3 col-lg-4 col-md-10 md-offset-1 col-sm-12 col-xs-12 container_img ">
+                <div class="col-xl-5 col-lg-5 col-md-10 md-offset-1 col-sm-12 col-xs-12 container_img ">
                     <div class="More text-center">
                         <span id="click">Find Out More Here <br><i class="icofont-location-arrow"></i></span>
                     </div>
@@ -160,7 +211,7 @@
                     </article>
                     <img src="img/nascar.jpg" alt="">
                 </div>
-                <div class="col-xl-3 col-lg-4 col-md-10 md-offset-1 col-sm-12 col-xs-12 container_img ">
+                <!-- <div class="col-xl-3 col-lg-4 col-md-10 md-offset-1 col-sm-12 col-xs-12 container_img ">
                     <div class="More text-center">
                         <span id="click">Find Out More Here <br><i class="icofont-location-arrow"></i></span>
                     </div>
@@ -170,120 +221,42 @@
                             Capabilities </h4>
                     </article>
                     <img src="img/capabilities.jpeg" alt="">
-                </div>
+                </div> -->
             </div>
 
         </div>
 
     </section>
 
-    <!-- ======= Cta Section ======= -->
-    <section id="cta" class="cta">
-        <div class="container">
+  
+<!-- Footer -->
+<footer class="page-footer font-small unique-color-dark pt-4">
 
-            <div class="text-center" data-aos="zoom-in">
-                <h3>Contact Us</h3>
-                <p>Please contact us for any and all business inquiries. Thank you!</p>
-                <a class="cta-btn" href="#">Contact Us</a>
-            </div>
-
-        </div>
-    </section>
-    <!-- End Cta Section -->
-
-
-
-
-
-
-    <!-- Footer -->
-    <footer class="page-footer footer font-small indigo" id="footer">
-
-        <!-- Footer Links -->
-        <div class="container">
-
-            <!-- Grid row-->
-            <div class="row text-center d-flex justify-content-center pt-5 mb-3">
-
-                <!-- Grid column -->
-                <div class="col-md-2 mb-3">
-                    <h6 class="text-uppercase font-weight-bold">
-                        <a href="#!">About us</a>
-                    </h6>
-                </div>
-                <!-- Grid column -->
-
-                <!-- Grid column -->
-                <div class="col-md-2 mb-3">
-                    <h6 class="text-uppercase font-weight-bold">
-                        <a href="#!">Products</a>
-                    </h6>
-                </div>
-                <!-- Grid column -->
-
-                <!-- Grid column -->
-                <div class="col-md-2 mb-3">
-                    <h6 class="text-uppercase font-weight-bold">
-                        <a href="#!">Awards</a>
-                    </h6>
-                </div>
-                <!-- Grid column -->
-
-                <!-- Grid column -->
-                <div class="col-md-2 mb-3">
-                    <h6 class="text-uppercase font-weight-bold">
-                        <a href="#!">Help</a>
-                    </h6>
-                </div>
-                <!-- Grid column -->
-
-                <!-- Grid column -->
-                <div class="col-md-2 mb-3">
-                    <h6 class="text-uppercase font-weight-bold">
-                        <a href="#!">Contact</a>
-                    </h6>
-                </div>
-                <!-- Grid column -->
-
-            </div>
-            <!-- Grid row-->
-            <hr class="rgba-white-light" style="margin: 0 15%;">
-
-            <!-- Grid row-->
-            <div class="row d-flex text-center justify-content-center mb-md-0 mb-4">
-
-                <!-- Grid column -->
-                <div class="col-md-8 col-12 mt-5">
-                    <p style="line-height: 1.7rem">Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-                        accusantium doloremque laudantium, totam rem
-                        aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
-                        explicabo.
-                        Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
-                        consequuntur.</p>
-                </div>
-                <!-- Grid column -->
-
-            </div>
-
-
-
-
-        </div>
-        <!-- Grid row-->
-
-
-
-        <!-- Copyright -->
-        <div class="footer-copyright text-center py-3">© 2020 Copyright:
-            <a href="#">Trax, Inc.</a>
-        </div>
-        <!-- Copyright -->
-
-    </footer>
-    <!-- Footer -->
-
-    <!-- End Counts Section -->
-    <!-- slider_area_end -->
+    <!-- Footer Elements -->
+    <div class="container-fluid">
+  
+      <!-- Call to action -->
+      <ul class="list-unstyled list-inline text-center align-middle">
+        <li class="list-inline-item">
+          <h5 class="pb-1">Get In Touch!</h5>
+        </li>
+        <li class="list-inline-item">
+          <a href="contact.html" class="btn btn-outline-light btn-rounded waves-effect">Contact Us</a>
+        </li>
+      </ul>
+      <!-- Call to action -->
+  
+    </div>
+    <!-- Footer Elements -->
+  
+    <!-- Copyright -->
+    <div class="footer-copyright text-center py-3">© 2020 Copyright:
+      <a href="index.html"> Trax RFID Inc.</a>
+    </div>
+    <!-- Copyright -->
+  
+  </footer>
+  <!-- Footer -->
 
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>

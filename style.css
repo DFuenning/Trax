@@ -1185,14 +1185,32 @@ section {
 /*--------------------------------------------------------------
 # Footer
 --------------------------------------------------------------*/
-#footer {
-    color: #444444;
+footer .container-fluid {
+    color: #fff;
     font-size: 14px;
-    background: #f1f0f2;
-    padding: 10px 0 30px 0;
-    background: #f9f8f9;
+    padding: auto 0;
+    background-color: #1b3246;
+    height: 75px;
 }
 
+footer .container-fluid ul{
+    margin-bottom: 0;
+    height: 100%;
+ 
+    margin-bottom: auto;
+
+}
+
+footer .container-fluid ul li{
+    margin-top: 1.25em;
+    height: 100%;
+
+}
+
+footer .footer-copyright {
+    background-color: #1c2331
+
+}
 
 
 /*--------------------------------------------------------------
@@ -2076,61 +2094,7 @@ service section style
     margin-top: 20px;
     margin-bottom: 20px;
   }
-  
-  .blog .entry .entry-footer {
-    padding-top: 10px;
-    border-top: 1px solid #e6e6e6;
-  }
-  
-  .blog .entry .entry-footer i {
-    color: #5e5e5e;
-    display: inline;
-  }
-  
-  .blog .entry .entry-footer a {
-    color: #8b8b8b;
-    transition: 0.3s;
-  }
-  
-  .blog .entry .entry-footer a:hover {
-    color: #1bbd36;
-  }
-  
-  .blog .entry .entry-footer .cats {
-    list-style: none;
-    display: inline;
-    padding: 0 20px 0 0;
-    font-size: 14px;
-  }
-  
-  .blog .entry .entry-footer .cats li {
-    display: inline-block;
-  }
-  
-  .blog .entry .entry-footer .tags {
-    list-style: none;
-    display: inline;
-    padding: 0;
-    font-size: 14px;
-  }
-  
-  .blog .entry .entry-footer .tags li {
-    display: inline-block;
-  }
-  
-  .blog .entry .entry-footer .tags li + li::before {
-    padding-right: 6px;
-    color: #6c757d;
-    content: ",";
-  }
-  
-  .blog .entry .entry-footer .share {
-    font-size: 16px;
-  }
-  
-  .blog .entry .entry-footer .share i {
-    padding-left: 5px;
-  }
+
   
   .blog .entry-single {
     margin-bottom: 30px;
