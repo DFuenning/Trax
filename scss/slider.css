@@ -41,7 +41,7 @@
 }
 
 #catCont .card .card__head {
-  color: black;
+  color: #fff;
   background: #005ac86e;
   padding: 0.5em;
   -webkit-transform: rotate(-90deg);
@@ -55,11 +55,31 @@
   position: absolute;
   bottom: 0;
   left: 0;
-  font-size: 1em;
+  font-size: 1.25em;
   white-space: nowrap;
 }
+@media (max-width: 1024px) {
+  #catCont .card .card__head {
+    font-size: 25px;
+  }
+  #catCont .card:hover .card__head{
+    font-size: 30px;
+  }
+}
 
-
+@media (max-width: 768px) {
+  #catCont .card:hover .card__head{
+    font-size: 24px;
+  }
+  #catCont .card .card__head {
+    font-size: 20px;
+  }
+}
+@media (max-width: 500px) {
+  #catCont .card:hover .card__head{
+    font-size: 16px;
+  }
+}
 #catCont .card:hover .card_body{
   text-align: center;
   position: absolute;
@@ -67,7 +87,7 @@
   top: 30%;
   font-size: 36px;
   color: white;
-  background: rgba(0, 0, 0, 0.5);
+  background: #005ac86e;
 }
 
 #catCont .card:hover {
@@ -81,11 +101,15 @@
           filter: grayscale(0);
 }
 
+#inlayBody {
+  width: 100%;
+}
+
 #catCont .card:hover .card__head {
   text-align: center;
   top: calc(100% - 2em);
   color: white;
-  background: rgba(0, 0, 0, 0.5);
+  background: #005ac86e;
   font-size: 2em;
   -webkit-transform: rotate(0deg) skew(-5deg);
           transform: rotate(0deg) skew(-5deg);

@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Vollkorn:wght@400;600;900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-@import url("https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Ubuntu");
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap');
 
 body {
-    font-family: "Open Sans", sans-serif;
+    font-family: 'Rubik', sans-serif;
     color: #444444;
 }
 
@@ -16,7 +16,7 @@ a:hover {
     color: #00cc95;
     text-decoration: none;
 }
-
+/* 
 h1,
 h2,
 h3,
@@ -24,7 +24,7 @@ h4,
 h5,
 h6 {
     font-family: "Raleway", sans-serif;
-}
+} */
 
 
 
@@ -63,6 +63,7 @@ h6 {
     margin: 0;
     max-height: 100px;
 }
+
 
 /*--------------------------------------------------------------
 # Top Bar
@@ -120,6 +121,7 @@ h6 {
     float: left;
     margin-top: auto;
     height: 100%;
+    
 }
 
 .nav-menu a {
@@ -130,7 +132,7 @@ h6 {
     transition: 0.3s;
     font-size: 16px;
     font-weight: bolder;
-    font-family: "Open Sans", sans-serif;
+    font-family: 'Rubik', sans-serif;
 }
 
 .nav-menu a:hover,
@@ -254,7 +256,7 @@ h6 {
     background-size: cover;
     background-position: center 50px right;
     position: relative;
-    font-family: "Open Sans", sans-serif !important;
+    font-family: 'Rubik', sans-serif;
     background-repeat: no-repeat;
 
 }
@@ -283,7 +285,7 @@ h6 {
     margin-bottom: 0px;
     font-size: 20px;
     font-weight: 500;
-    font-family: "Open Sans", sans-serif;
+    font-family: 'Rubik', sans-serif;
     letter-spacing: 0.5px;
     text-transform: uppercase;
 
@@ -316,7 +318,7 @@ h6 {
     border-radius: 0%;
     border: none;
     padding: 10;
-    font-family: "Ubuntu";
+    font-family: 'Rubik', sans-serif;
     font-size: 24px;
     text-align: center;
     font-weight: 700;
@@ -333,12 +335,12 @@ h6 {
 }
 
 #hero h1 {
-    /* font-family: 'Crimson Text', serif !important; */
     font-weight: 400;
     color: #eee;
     margin-bottom: 40px;
     font-size: 60px;
     font-weight: 500;
+    font-family: 'Rubik', sans-serif;
 
     letter-spacing: 0.5px;
     text-transform: uppercase;
@@ -413,25 +415,23 @@ h6 {
 }
 
 #heroSolutions h1 {
-    font-family: 'Crimson Text', serif !important;
+    font-family: 'Rubik', sans-serif;
     font-weight: 400;
     color: #eee;
     margin-bottom: 40px;
     font-size: 60px;
     font-weight: 500;
-    font-family: "Open Sans", sans-serif;
     letter-spacing: 0.5px;
     text-transform: uppercase;
 }
 
 #heroSolutions h2 {
-    font-family: 'Vollkorn', serif;
     font-weight: 400;
     color: #eee;
     margin-bottom: 40px;
     font-size: 20px;
     font-weight: 500;
-    font-family: "Open Sans", sans-serif;
+    font-family: 'Rubik', sans-serif;
     letter-spacing: 0.5px;
     text-transform: uppercase;
 
@@ -487,26 +487,24 @@ h6 {
 }
 
 #heroRoof h1 {
-    font-family: 'Crimson Text', serif !important;
     font-weight: 400;
     color: #eee;
     padding-top: 10px;
     margin-bottom: 40px;
     font-size: 32px;
     font-weight: 500;
-    font-family: "Open Sans", sans-serif;
+    font-family: 'Rubik', sans-serif;
     letter-spacing: 0.5px;
     text-transform: uppercase;
 }
 
 #heroRoof h2 {
-    font-family: 'Vollkorn', serif;
     font-weight: 400;
     color: #eee;
     margin-bottom: 40px;
     font-size: 20px;
     font-weight: 500;
-    font-family: "Open Sans", sans-serif;
+    font-family: 'Rubik', sans-serif;
     letter-spacing: 0.5px;
     text-transform: uppercase;
 
@@ -524,7 +522,7 @@ h6 {
 
 .newHero {
     width: 100%;
-    height: 70vh;
+    height: 700px;
     background: linear-gradient(#00000000, #00000000), url("img/traxHead.jpeg") center center;
     background-size: cover;
     position: relative;
@@ -532,7 +530,20 @@ h6 {
     padding: 0;
 }
 
-
+@media (max-width: 1024px) {
+    .newHero {
+        height: 500px;
+    }
+    .newHero .row {
+        position: relative;
+        transform: translatey(20%);
+        top: -20%;
+    }
+    .newHero .newHeroText {
+        text-align: center;
+        width: 100%;
+    }
+}
 
 #newCard {
     height: 350px;
@@ -546,14 +557,14 @@ h6 {
 }
 
 .newHeroText h1 {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Rubik', sans-serif;
     font-size: 56px;
     color: #fff;
     margin-bottom: 30px;
 }
 
 .newHeroText h5 {
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Rubik', sans-serif;
     font-size: 24px;
     color: #fff;
     margin-bottom: 30px;
@@ -763,9 +774,9 @@ color: #FCFBFA;
 /* CARD SECTION ON INDEX PAGE FOR SERVICES */
 
 
-body {
-    font-family: 'Raleway', sans-serif;
-}
+/* body {
+    font-family: 'Rubik', sans-serif;
+} */
 
 .contenedor {
     height: 100%;
@@ -912,7 +923,7 @@ body {
 }
 
 .cta .cta-btn {
-    font-family: "Raleway", sans-serif;
+    font-family: 'Rubik', sans-serif;
     text-transform: uppercase;
     font-weight: 600;
     font-size: 15px;
@@ -951,8 +962,8 @@ section {
 }
 
 .section-title h2 {
-    font-size: 32px;
-    font-weight: bold;
+    font-size: 36px;
+    font-weight: bolder;
     text-transform: uppercase;
     margin-bottom: 20px;
     padding-bottom: 20px;
@@ -1218,7 +1229,7 @@ footer .footer-copyright {
 --------------------------------------------------------------*/
 
 #about-heading h1 {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Rubik', sans-serif;
     font-size: 48px;
     color: #005ca8;
 }
@@ -1712,17 +1723,16 @@ service section style
 ==========================================================================*/
 
 .caseStudies .row {
-    height: 450px;
-    margin-bottom: 100px;
+    min-height: 350px;
+    margin-bottom: auto;
 }
 
 .left-pic {
-    background: url(img/manufacturing.jpg);
+    background: url("img/manufacturing.jpg");
     background-repeat: no-repeat;
     background-position: center;
-    height: 100%;
-    width: 100%;
-    margin-right: -10% !important;
+    height: 350px;
+    width: auto;
     display: flex;
     justify-content: center;
 }
@@ -1731,8 +1741,8 @@ service section style
     background: url(img/chip.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    height: 100%;
-    width: 100%;
+    height: 350px;
+    width: auto;
     text-align: center;
 }
 
@@ -1745,6 +1755,15 @@ service section style
     text-align: center;
 }
 
+@media (max-width: 1024px) {
+    .left-text {
+        text-align: center !important;
+    } 
+    .right-text {
+        text-align: center !important;
+    }
+}
+
 #max {
     width: auto;
     height: 100%;
@@ -1752,19 +1771,17 @@ service section style
 
 .left-text {
     display: relative;
-    transform: translateY(50%);
-    text-align: right !important;
+    text-align: right;
 }
 
 .right-text {
     display: relative;
-    transform: translateY(50%);
-    text-align: right !important;
+    text-align: right ;
 }
 
 .right-text {
     vertical-align: middle;
-    text-align: left !important;
+    text-align: left;
 }
 
 .left-text h2 {
@@ -2141,7 +2158,7 @@ service section style
     margin-bottom: 0px;
     font-size: 48px;
     font-weight: bold;
-    font-family: "Open Sans", sans-serif;
+    font-family: 'Rubik', sans-serif;
     letter-spacing: 0.5px;
     text-transform: uppercase;
     text-align: center;
