@@ -272,35 +272,35 @@
 
 	});
 
-	function myFunction() {
-		var x = document.getElementById("divOne");
+	// function myFunction() {
+	// 	var x = document.getElementById("divOne");
 
-		if (x.style.display ===
-			"none") {
-			x.style.display = "block";
-		} else {
-			x.style.display =
-				"none";
-		}
-		$(document).ready(
-			function () {
-				$("#One").click(function () {
-					$("#divOne").toggle();
-				});
-			});
+	// 	if (x.style.display ===
+	// 		"none") {
+	// 		x.style.display = "block";
+	// 	} else {
+	// 		x.style.display =
+	// 			"none";
+	// 	}
+	// 	$(document).ready(
+	// 		function () {
+	// 			$("#One").click(function () {
+	// 				$("#divOne").toggle();
+	// 			});
+	// 		});
 
-		// Init AOS
-		function aos_init() {
-			AOS.init({
-				duration: 1000,
-				once: true
-			});
-		}
-		$(window).on('load', function () {
-			aos_init();
-		});
+	// 	// Init AOS
+	// 	function aos_init() {
+	// 		AOS.init({
+	// 			duration: 1000,
+	// 			once: true
+	// 		});
+	// 	}
+	// 	$(window).on('load', function () {
+	// 		aos_init();
+	// 	});
 
-    };
+    // };
     
     setTimeout(function() {
         $('card_body').show()

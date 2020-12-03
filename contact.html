@@ -43,16 +43,23 @@
                     <li><a href="services.html">Products</a></li>
                     <li><a href="capabilities.html">Capabilities</a></li>
                     <li><a href="case.html">Case Studies</a></li>
-                    <li><a href="blog.html">News</a></li>
+                    <li><a href="news.html">News</a></li>
                     <li><a href="contact.html">Contact Us</a></li>
-                    
+
 
                 </ul>
             </nav><!-- .nav-menu -->
 
         </div>
     </header><!-- End Header -->
+    <section id="heroRoof">
+        <!-- ======= Hero Section ======= -->
 
+        <div class="container-fluid justify-content-center position-relative" data-aos="fade-in" data-aos-delay="200"
+            id="heroText">
+            <h1><a style="color: #fff;" href="index.html">Home ></a> Contact</h1>
+        </div>
+    </section><!-- End Hero -->
     <!-- BEGIN CONTACT SECTION -->
 
     <section id="contact" class="contact">
@@ -62,20 +69,76 @@
                     <div class="section-title">
                         <h2>Contact Us</h2>
                         <h4>We are anxious to hear from you.</h4>
-                        <p>We are hoping you are in need of our products and/or services.  If you are, we are glad you’re here.  Please tell us what you need.  If you don’t know yet, and just want more information and who we are and what we do, please continue by telling us a little about you and what brought you to our site.  We’ll proceed from there at any pace you like.</p>
+                        <p>We are hoping you are in need of our products and/or services. If you are, we are glad you’re
+                            here. Please tell us what you need. If you don’t know yet, and just want more information
+                            and who we are and what we do, please continue by telling us a little about you and what
+                            brought you to our site. We’ll proceed from there at any pace you like.</p>
                     </div>
                 </div>
 
                 <div class="col-lg-8" data-aos="fade-up" data-aos-delay="100">
                     <img src="img/lilrock.jpg" style="width: 100%; height: 420px; border: 0;">
-                    
+
                     <div class="info mt-4">
                         <i class="icofont-envelope"></i>
                         <h4>Email:</h4>
                         <p>info@example.com</p>
                     </div>
+                    <form id="contact-form" method="post" action="contact-2.php" role="form" class="php-email-form mt-4">
 
-                    <form action="forms/contact.php" method="post" role="form" class="php-email-form mt-4">
+                        <div class="messages"></div>
+
+                        <div class="controls">
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="form_name">First Name *</label>
+                                        <input id="form_name" type="text" name="name" class="form-control" placeholder="Please enter your first name *" required="required" data-error="Firstname is required.">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="form_lastname">Last Name *</label>
+                                        <input id="form_lastname" type="text" name="surname" class="form-control" placeholder="Please enter your last name *" required="required" data-error="Lastname is required.">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="form_email">Email *</label>
+                                        <input id="form_email" type="email" name="email" class="form-control" placeholder="Please enter your email *" required="required" data-error="Valid email is required.">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <label for="form_phone">Phone</label>
+                                        <input id="form_phone" type="tel" name="phone" class="form-control" placeholder="Please enter your phone">
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <label for="form_message">Message *</label>
+                                        <textarea id="form_message" name="message" class="form-control" placeholder="Write us a message *" rows="4" required="required" data-error="Please, leave us a message."></textarea>
+                                        <div class="help-block with-errors"></div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 text-center">
+                                    <input type="submit" class="btn btn-success btn-send" value="Send message" id="submitBtn">
+                                </div>
+                            </div>
+                          
+                        </div>
+
+                    </form>
+                    <!-- <form action="forms/contact.php" onsubmit="return validateForm()" method="post" role="form" class="php-email-form mt-4">
                         <div class="form-row">
                             <div class="col-md-6 form-group">
                                 <input type="text" name="name" class="form-control" id="name" placeholder="Your Name"
@@ -87,25 +150,21 @@
                                     placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
                                 <div class="validate"></div>
                             </div>
-                            <!-- <label>Select list</label>
-                            <select id = "myList">
-                              <option value = "1">one</option>
-                              <option value = "2">two</option>
-                              <option value = "3">three</option>
-                              <option value = "4">four</option>
-                            </select> -->
+                      
                         </div>
                         <div class="form-group">
-                            <select class="form-control select2bs4" name="subject" id="subject" style="width: 100%">
-                                <option value="" disabled selected>Select your option</option>
-                                <option value="inlay">Inlays</option>
+                            <select class="form-control select2bs4" name="subject" id="subject"
+                                style="width: 100%">
+                                <option value="" disabled selected>Select a Subject</option>
+                                <option value="Inlay">Inlays</option>
                                 <option value="tireTag">Tire Tags</option>
                                 <option value="other">Other Inquiries</option>
-                              </select>
+                            </select>
                         </div>
                         <div class="form-group">
                             <textarea class="form-control" name="message" rows="5" data-rule="required"
-                                data-msg="Please write something for us" placeholder="Write your message here!"></textarea>
+                                data-msg="Please write something for us"
+                                placeholder="Write your message here!"></textarea>
                             <div class="validate"></div>
                         </div>
                         <div class="mb-3">
@@ -113,49 +172,51 @@
                             <div class="error-message"></div>
                             <div class="sent-message">Your message has been sent. Thank you!</div>
                         </div>
-                        <div class="text-center"><button type="submit">Send Message</button></div>
-                    </form>
+                        <div class="text-center"><button type="submit" onclick="validateForm()">Send Message</button></div>
+                    </form>-->
                 </div>
             </div>
 
         </div>
-    </section><!-- End Contact Section -->
+    </section>
+ 
 
 
 
-  
-<!-- Footer -->
-<footer class="page-footer font-small unique-color-dark pt-4">
+    <!-- Footer -->
+    <footer class="page-footer font-small unique-color-dark pt-4">
 
-    <!-- Footer Elements -->
-    <div class="container">
-  
-      <!-- Call to action -->
-      <ul class="list-unstyled list-inline text-center py-2">
-        <li class="list-inline-item">
-          <h5 class="mb-1">Get In Touch!</h5>
-        </li>
-        <li class="list-inline-item">
-          <a href="contact.html" class="btn btn-outline-white btn-rounded">Contact Us</a>
-        </li>
-      </ul>
-      <!-- Call to action -->
-  
-    </div>
-    <!-- Footer Elements -->
-  
-    <!-- Copyright -->
-    <div class="footer-copyright text-center py-3">© 2020 Copyright:
-      <a href="index.html"> Trax RFID Inc.</a>
-    </div>
-    <!-- Copyright -->
-  
-  </footer>
-  <!-- Footer -->
+        <!-- Footer Elements -->
+        <div class="container-fluid">
+
+            <!-- Call to action -->
+            <ul class="list-unstyled list-inline text-center align-middle">
+                <li class="list-inline-item">
+                    <h5 class="pb-1">Back to Home</h5>
+                </li>
+                <li class="list-inline-item">
+                    <a href="index.html" class="btn btn-outline-light btn-rounded waves-effect">Home Page</a>
+                </li>
+            </ul>
+            <!-- Call to action -->
+
+        </div>
+        <!-- Footer Elements -->
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2020 Copyright:
+            <a href="index.html"> Trax RFID, LLC</a>
+        </div>
+        <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
+
     <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="contact-2.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="vendor/jquery.easing/jquery.easing.min.js"></script>
-    <script src="vendor/php-email-form/validate.js"></script>
+    
     <script src="vendor/waypoints/jquery.waypoints.min.js"></script>
     <script src="vendor/counterup/counterup.min.js"></script>
     <script src="vendor/isotope-layout/isotope.pkgd.min.js"></script>

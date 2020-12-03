@@ -1,5 +1,5 @@
 body {
-  font-family: 'lato', sans-serif;
+  font-family: 'Rubik', sans-serif;
 }
 
 .container {
@@ -34,7 +34,7 @@ h2 small {
 
 .responsive-table .table-header {
   background-color: #95A5A6;
-  font-size: 14px;
+  font-size: 16px;
   text-transform: uppercase;
   letter-spacing: 0.03em;
 }
@@ -92,3 +92,54 @@ h2 small {
   }
 }
 /*# sourceMappingURL=main.css.map */
+
+.responsive-col li {
+  border-radius: 3px;
+  /* padding: 25px auto; */
+  /* display: -webkit-box;
+  display: -ms-flexbox; */
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  /* margin-bottom: 25px; */
+}
+
+.responsive-col .table-col {
+  /* background-color: #ffffff; */
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+  
+}
+
+.responsive-col .table-row {
+  background-color: #ffffff;
+  -webkit-box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 9px 0px rgba(0, 0, 0, 0.1);
+}
+
+.responsive-col .col-1 {
+  flex-grow: 0.25;
+      color: #000;
+      height: 100%;
+}
+
+.responsive-col .col-2 {
+  flex-grow: 0.25;
+      color: #000;
+      height: 100%;
+}
+
+.responsive-col .col-3 {
+  flex-grow: 0.25;
+      color: #000;
+      height: 100%;
+}
+
+.responsive-col .col-4 {
+  flex-grow: 0.25;
+  color: #000;
+  height: 100%;
+}
+
