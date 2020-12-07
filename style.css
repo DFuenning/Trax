@@ -8,6 +8,10 @@ body {
     color: #444444;
 }
 
+html {
+    scroll-behavior: smooth;
+  }
+
 a {
     color: #005ca8;
 }
@@ -522,9 +526,6 @@ h6 {
         line-height: 36px;
     }
 
-    #heroSolutions {
-        height: 100vh;
-    }
 
     #heroSolutions .container {
         padding-top: 60px;
@@ -535,7 +536,15 @@ h6 {
         line-height: 36px;
     }
 }
+.modal-backdrop {
+    display: none;
+    z-index: 1040 !important;
+}
 
+.modal-content {
+    margin: 2px auto;
+    z-index: 1100 !important;
+}
 
 /* ABOUT US SECTION */
 #about {
@@ -545,6 +554,12 @@ h6 {
 /* #about p {
     text-transform: uppercase;
 } */
+
+#modal-one button {
+    background-color: #005ac8;
+    color: #fff;
+}
+
 
 .about .content h3 {
     font-weight: 600;
@@ -1817,6 +1832,14 @@ service section style
     transition: all 0.3s ease-in-out;
 }
 
+@media (max-width: 1024px) {
+    .event-list .card-img img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+
 .event-list .card-body {
     z-index: 10;
     background: #fff;
@@ -1867,6 +1890,9 @@ service section style
 .event-list .card:hover .card-body .card-title a {
     color: #006fbe;
 }
+
+
+/* End Event List */
 
 
 .studyHero {
@@ -1925,18 +1951,18 @@ div.elem-group {
     height: 250px;
   }
   
-  button {
+  .btn-learn-more{
     height: 50px;
-    background: green;
-    color: white;
-    border: 2px solid darkgreen;
+    background: #005ac8;
+    color: white !important;
+    border: 2px solid darkblue;
     font-size: 1.25em;
-    font-family: 'Aleo';
+    font-family: 'Rubik';
     border-radius: 4px;
     cursor: pointer;
   }
   
-  button:hover {
+  .btn-learn-more:hover {
     border: 2px solid black;
   }
 

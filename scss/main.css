@@ -4,6 +4,7 @@ body {
 
 .container {
   max-width: 1000px;
+  height: 100%;
   margin-left: auto;
   margin-right: auto;
   padding-left: 10px;
@@ -66,12 +67,10 @@ h2 small {
 }
 
 @media all and (max-width: 767px) {
-  .responsive-table .table-header {
-    display: none;
-  }
-  .responsive-table li {
+  
+  /* .responsive-table li {
     display: block;
-  }
+  } */
   .responsive-table .col {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;
@@ -91,6 +90,35 @@ h2 small {
     text-align: right;
   }
 }
+
+
+@media (max-width: 540px) {
+  .responsive-col li .col {
+    font-size: 14px;
+    padding: 0 !important;
+  }
+
+  .card .z-depth-1{
+    padding: 0 !important;
+  }
+
+  .solCont .responsive-table {
+    /* font-size: 10px; */
+    width: 100%;
+  }
+.solCont .table-header {
+  font-size: 12px;
+  text-align: center;
+  padding-right: 0 !important;
+
+
+}
+
+  .responsive-table .col:before {
+    display: none;
+  }
+}
+
 /*# sourceMappingURL=main.css.map */
 
 .responsive-col li {

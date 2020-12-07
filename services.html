@@ -27,7 +27,7 @@
 
 </head>
 
-<body style="background-color: rgb(226, 226, 226);">
+<body class="servBody" style="background-color: rgb(226, 226, 226);">
 
     <!-- ======= Header ======= -->
     <header id="header">
@@ -42,8 +42,8 @@
                     <li class="active"><a href="index.html">Home</a></li>
                     <li><a href="about.html">About Us</a></li>
                     <li><a href="services.html">Products</a></li>
-                    <li><a href="capabilities.html">Capabilities</a></li>
-                    <li><a href="case.html">Case Studies</a></li>
+                    <!-- <li><a href="capabilities.html">Capabilities</a></li>
+                    <li><a href="case.html">Case Studies</a></li> -->
                     <li><a href="news.html">News</a></li>
                     <li><a href="contact.html">Contact Us</a></li>
 
@@ -63,13 +63,15 @@
         </div>
     </section><!-- End Hero -->
 
-    <div class="container solCont">
+    <div class="container">
         <div class="row justify-content-center">
             <div class="section-title-no">
                 <h2>Our Solutions</h2>
                 <p><i>*click on the tags below for more details</i></p>
             </div>
         </div>
+    </div>
+    <div class="container solCont">
         <div class="row justify-content-center">
             <div class="container sol-type">
                 <h2>Wide Band</h2>
@@ -77,10 +79,10 @@
         </div>
         <ul class="responsive-table text-center pl-0">
             <li class="table-header">
-                <div class="col col-3">Part Number</div>
-                <div class="col col-3">Tag Family</div>
-                <div class="col col-3">Application</div>
-                <div class="col col-2">Dimensions (mm)</div>
+                <div class="col col-1">Part Name</div>
+                <div class="col col-2">Tag Family</div>
+                <div class="col col-3">Dimensions (mm)</div>
+                <div class="col col-4">Application</div>
             </li>
         </ul>
     </div>
@@ -95,15 +97,16 @@
                             <h5 class="text-uppercase mb-0 py-1">
                                 <ul class="responsive-col text-center pl-0 py-auto">
                                     <li class="table-col">
-                                        <div class="col col-3"><a class="black font-weight-bold" data-toggle="collapse" href="#collapse1"
-                                            aria-expanded="false" aria-controls="collapse1"><i style="font-size: 20px;"
-                                            class='bx bx-plus'></i>TX9508AM750</a></div>
+                                        <div class="col col-3"><a class="black font-weight-bold" data-toggle="collapse"
+                                                href="#collapse1" aria-expanded="false" aria-controls="collapse1"><i
+                                                    style="font-size: 20px;" class='bx bx-plus'></i>TX9508AM750</a>
+                                        </div>
                                         <div class="col col-3">Std. Form Factor Dipole</div>
                                         <div class="col col-3">General Asset Tracking</div>
-                                        <div class="col col-2">8 x 95(mm)</div>
+                                        <div class="col col-3">8 x 95(mm)</div>
                                     </li>
                                 </ul>
-                               
+
                             </h5>
                         </div>
                         <div id="collapse1" class="collapse" role="tabpanel" aria-labelledby="heading1"
@@ -112,12 +115,14 @@
                                 <div class="row my-4">
                                     <div class="col-md-8 text-center">
                                         <h2 class="font-weight-bold mb-3 black-text">TX9508AM750</h2>
-        
-                                        <a class="btn-learn-more text-center" href="pdf/example.pdf">Data Sheet</a>
+                                        <button type="button" class="btn btn-learn-more text-center" data-toggle="modal"
+                                            data-target="#modal-one" data-modal-type="modal-one">Data Sheet</button>
+
                                     </div>
                                     <div class="col-md-4 my-auto pt-2">
                                         <div class="view z-depth-1">
-                                            <img src="https://trax-imagery.s3.us-east-2.amazonaws.com/image001.png" alt="" class="img-fluid">
+                                            <img src="https://trax-imagery.s3.us-east-2.amazonaws.com/image001.png"
+                                                alt="" class="img-fluid">
                                         </div>
                                     </div>
                                 </div>
@@ -129,10 +134,10 @@
                             <h5 class="text-uppercase mb-0 py-1">
                                 <ul class="responsive-col text-center pl-0 py-auto">
                                     <li class="table-col">
-                                        <div class="col col-3"><a class="black font-weight-bold" data-toggle="collapse" href="#collapse2"
-                                            aria-expanded="false" aria-controls="collapse2"><i style="font-size: 20px;"
-                                            class='bx bx-plus'></i>TX9508AR6</a></div>
-                                        <div class="col col-3">Std. Form Factor Dipole</div>
+                                        <div class="col col-3"><a class="black font-weight-bold" data-toggle="collapse"
+                                                href="#collapse2" aria-expanded="false" aria-controls="collapse2"><i
+                                                    style="font-size: 20px;" class='bx bx-plus'></i>TX9508AR6</a></div>
+                                        <div class="col col-3 ">Std. Form Factor Dipole</div>
                                         <div class="col col-3">General Asset Tracking</div>
                                         <div class="col col-2">8 x 95(mm)</div>
                                     </li>
@@ -145,12 +150,14 @@
                                 <div class="row my-4">
                                     <div class="col-md-8 text-center">
                                         <h2 class="font-weight-bold mb-3 black-text">Std. Form Factor Dipole</h2>
-        
-                                        <a class="btn-learn-more text-center" href="pdf/example.pdf">Data Sheet</a>
+
+                                        <button type="button" class="btn btn-learn-more text-center" data-toggle="modal"
+                                            data-target="#modal-one" data-modal-type="modal-one">Data Sheet</button>
                                     </div>
                                     <div class="col-md-4 my-auto pt-2">
                                         <div class="view z-depth-1">
-                                            <img src="https://trax-imagery.s3.us-east-2.amazonaws.com/image002.png" alt="" class="img-fluid">
+                                            <img src="https://trax-imagery.s3.us-east-2.amazonaws.com/image002.png"
+                                                alt="" class="img-fluid">
                                         </div>
                                     </div>
                                 </div>
@@ -162,9 +169,9 @@
                             <h5 class="text-uppercase mb-0 py-1">
                                 <ul class="responsive-col text-center pl-0 py-auto">
                                     <li class="table-col">
-                                        <div class="col col-3"><a class="black font-weight-bold" data-toggle="collapse" href="#collapse3"
-                                            aria-expanded="false" aria-controls="collapse3"><i style="font-size: 20px;"
-                                            class='bx bx-plus'></i>TX9508AU8</a></div>
+                                        <div class="col col-3"><a class="black font-weight-bold" data-toggle="collapse"
+                                                href="#collapse3" aria-expanded="false" aria-controls="collapse3"><i
+                                                    style="font-size: 20px;" class='bx bx-plus'></i>TX9508AU8</a></div>
                                         <div class="col col-3">Std. Form Factor Dipole</div>
                                         <div class="col col-3">General Asset Tracking</div>
                                         <div class="col col-2">8 x 95(mm)</div>
@@ -178,12 +185,14 @@
                                 <div class="row my-4">
                                     <div class="col-md-8 text-center">
                                         <h2 class="font-weight-bold mb-3 black-text">Std. Form Factor Dipole</h2>
-        
-                                        <a class="btn-learn-more text-center" href="pdf/example.pdf">Data Sheet</a>
+
+                                        <button type="button" class="btn btn-learn-more text-center" data-toggle="modal"
+                                            data-target="#modal-one" data-modal-type="modal-one">Data Sheet</button>
                                     </div>
                                     <div class="col-md-4 my-auto pt-2">
                                         <div class="view z-depth-1">
-                                            <img src="https://trax-imagery.s3.us-east-2.amazonaws.com/image005.png" alt="" class="img-fluid">
+                                            <img src="https://trax-imagery.s3.us-east-2.amazonaws.com/image005.png"
+                                                alt="" class="img-fluid">
                                         </div>
                                     </div>
                                 </div>
@@ -195,9 +204,9 @@
                             <h5 class="text-uppercase mb-0 py-1">
                                 <ul class="responsive-col text-center pl-0 py-auto">
                                     <li class="table-col">
-                                        <div class="col col-3"><a class="black font-weight-bold" data-toggle="collapse" href="#collapse4"
-                                            aria-expanded="false" aria-controls="collapse4"><i style="font-size: 20px;"
-                                            class='bx bx-plus'></i>TX9508BU8</a></div>
+                                        <div class="col col-3"><a class="black font-weight-bold" data-toggle="collapse"
+                                                href="#collapse4" aria-expanded="false" aria-controls="collapse4"><i
+                                                    style="font-size: 20px;" class='bx bx-plus'></i>TX9508BU8</a></div>
                                         <div class="col col-3">Standard Form Factor Dipole</div>
                                         <div class="col col-3">General Asset Tracking</div>
                                         <div class="col col-2">8 x 95(mm)</div>
@@ -211,12 +220,14 @@
                                 <div class="row my-4">
                                     <div class="col-md-8 text-center">
                                         <h2 class="font-weight-bold mb-3 black-text">Std. Form Factor Dipole</h2>
-        
-                                        <a class="btn-learn-more text-center" href="pdf/example.pdf">Data Sheet</a>
+
+                                        <button type="button" class="btn btn-learn-more text-center" data-toggle="modal"
+                                            data-target="#modal-one" data-modal-type="modal-one">Data Sheet</button>
                                     </div>
                                     <div class="col-md-4 my-auto pt-2">
                                         <div class="view z-depth-1">
-                                            <img src="https://trax-imagery.s3.us-east-2.amazonaws.com/image007.png" alt="" class="img-fluid">
+                                            <img src="https://trax-imagery.s3.us-east-2.amazonaws.com/image007.png"
+                                                alt="" class="img-fluid">
                                         </div>
                                     </div>
                                 </div>
@@ -228,12 +239,12 @@
                             <h5 class="text-uppercase mb-0 py-1">
                                 <ul class="responsive-col text-center pl-0 py-auto">
                                     <li class="table-col">
-                                        <div class="col col-3"><a class="black font-weight-bold" data-toggle="collapse" href="#collapse5"
-                                            aria-expanded="false" aria-controls="collapse5"><i style="font-size: 20px;"
-                                            class='bx bx-plus'></i>TX4512AU8</a></div>
-                                            <div class="col col-3">Medium Form Factor Dipole</div>
-                                            <div class="col col-3">General Asset Tracking</div>
-                                            <div class="col col-2">12 x 45(mm)</div>
+                                        <div class="col col-3"><a class="black font-weight-bold" data-toggle="collapse"
+                                                href="#collapse5" aria-expanded="false" aria-controls="collapse5"><i
+                                                    style="font-size: 20px;" class='bx bx-plus'></i>TX4512AU8</a></div>
+                                        <div class="col col-3">Medium Form Factor Dipole</div>
+                                        <div class="col col-3">General Asset Tracking</div>
+                                        <div class="col col-2">12 x 45(mm)</div>
                                     </li>
                                 </ul>
                             </h5>
@@ -244,12 +255,14 @@
                                 <div class="row my-4">
                                     <div class="col-md-8 text-center">
                                         <h2 class="font-weight-bold mb-3 black-text">Std. Form Factor Dipole</h2>
-        
-                                        <a class="btn-learn-more text-center" href="pdf/example.pdf">Data Sheet</a>
+
+                                        <button type="button" class="btn btn-learn-more text-center" data-toggle="modal"
+                                            data-target="#modal-one" data-modal-type="modal-one">Data Sheet</button>
                                     </div>
                                     <div class="col-md-4 my-auto pt-2">
                                         <div class="view z-depth-1">
-                                            <img src="https://trax-imagery.s3.us-east-2.amazonaws.com/image009.png" alt="" class="img-fluid">
+                                            <img src="https://trax-imagery.s3.us-east-2.amazonaws.com/image009.png"
+                                                alt="" class="img-fluid">
                                         </div>
                                     </div>
                                 </div>
@@ -261,9 +274,9 @@
                             <h5 class="text-uppercase mb-0 py-1">
                                 <ul class="responsive-col text-center pl-0 py-auto">
                                     <li class="table-col">
-                                        <div class="col col-3"><a class="black font-weight-bold" data-toggle="collapse" href="#collapse6"
-                                            aria-expanded="false" aria-controls="collapse6"><i style="font-size: 20px;"
-                                            class='bx bx-plus'></i>TX41414AU8</a></div>
+                                        <div class="col col-3"><a class="black font-weight-bold" data-toggle="collapse"
+                                                href="#collapse6" aria-expanded="false" aria-controls="collapse6"><i
+                                                    style="font-size: 20px;" class='bx bx-plus'></i>TX41414AU8</a></div>
                                         <div class="col col-3">Medium Form Factor Dipole</div>
                                         <div class="col col-3">General Asset Tracking</div>
                                         <div class="col col-2">14 x 41(mm)</div>
@@ -277,12 +290,14 @@
                                 <div class="row my-4">
                                     <div class="col-md-8 text-center">
                                         <h2 class="font-weight-bold mb-3 black-text">Std. Form Factor Dipole</h2>
-        
-                                        <a class="btn-learn-more text-center" href="pdf/example.pdf">Data Sheet</a>
+
+                                        <button type="button" class="btn btn-learn-more text-center" data-toggle="modal"
+                                            data-target="#modal-one" data-modal-type="modal-one">Data Sheet</button>
                                     </div>
                                     <div class="col-md-4 my-auto pt-2">
                                         <div class="view z-depth-1">
-                                            <img src="https://trax-imagery.s3.us-east-2.amazonaws.com/image011.png" alt="" class="img-fluid">
+                                            <img src="https://trax-imagery.s3.us-east-2.amazonaws.com/image011.png"
+                                                alt="" class="img-fluid">
                                         </div>
                                     </div>
                                 </div>
@@ -295,7 +310,7 @@
             </div>
         </div>
     </div>
-    <div class="container">
+    <div class="container solCont">
         <div class="row justify-content-center">
             <div class="container sol-type">
                 <h2>High Frequency</h2>
@@ -321,9 +336,9 @@
                             <h5 class="text-uppercase mb-0 py-1">
                                 <ul class="responsive-col text-center pl-0 py-auto">
                                     <li class="table-col">
-                                        <div class="col col-3"><a class="black font-weight-bold" data-toggle="collapse" href="#collapse7"
-                                            aria-expanded="false" aria-controls="collapse7"><i style="font-size: 20px;"
-                                            class='bx bx-plus'></i>TX7012AU8</a></div>
+                                        <div class="col col-3"><a class="black font-weight-bold" data-toggle="collapse"
+                                                href="#collapse7" aria-expanded="false" aria-controls="collapse7"><i
+                                                    style="font-size: 20px;" class='bx bx-plus'></i>TX7012AU8</a></div>
                                         <div class="col col-3">Medium Form Factor Dipole</div>
                                         <div class="col col-3">General Asset Tracking</div>
                                         <div class="col col-2">12 x 70(mm)</div>
@@ -337,12 +352,14 @@
                                 <div class="row my-4">
                                     <div class="col-md-8 text-center">
                                         <h2 class="font-weight-bold mb-3 black-text">Std. Form Factor Dipole</h2>
-        
-                                        <a class="btn-learn-more text-center" href="pdf/example.pdf">Data Sheet</a>
+
+                                        <button type="button" class="btn btn-learn-more text-center" data-toggle="modal"
+                                            data-target="#modal-one" data-modal-type="modal-one">Data Sheet</button>
                                     </div>
                                     <div class="col-md-4 my-auto pt-2">
                                         <div class="view z-depth-1">
-                                            <img src="https://trax-imagery.s3.us-east-2.amazonaws.com/image013.png" alt="" class="img-fluid">
+                                            <img src="https://trax-imagery.s3.us-east-2.amazonaws.com/image013.png"
+                                                alt="" class="img-fluid">
                                         </div>
                                     </div>
                                 </div>
@@ -354,9 +371,9 @@
                             <h5 class="text-uppercase mb-0 py-1">
                                 <ul class="responsive-col text-center pl-0 py-auto">
                                     <li class="table-col">
-                                        <div class="col col-3"><a class="black font-weight-bold" data-toggle="collapse" href="#collapse8"
-                                            aria-expanded="false" aria-controls="collapse8"><i style="font-size: 20px;"
-                                            class='bx bx-plus'></i>TX4929AU8</a></div>
+                                        <div class="col col-3"><a class="black font-weight-bold" data-toggle="collapse"
+                                                href="#collapse8" aria-expanded="false" aria-controls="collapse8"><i
+                                                    style="font-size: 20px;" class='bx bx-plus'></i>TX4929AU8</a></div>
                                         <div class="col col-3">Clothing Tag</div>
                                         <div class="col col-3">Garment Tracking</div>
                                         <div class="col col-2">29 x 49(mm)</div>
@@ -370,12 +387,14 @@
                                 <div class="row my-4">
                                     <div class="col-md-8 text-center">
                                         <h2 class="font-weight-bold mb-3 black-text">Std. Form Factor Dipole</h2>
-        
-                                        <a class="btn-learn-more text-center" href="pdf/example.pdf">Data Sheet</a>
+
+                                        <button type="button" class="btn btn-learn-more text-center" data-toggle="modal"
+                                            data-target="#modal-one" data-modal-type="modal-one">Data Sheet</button>
                                     </div>
                                     <div class="col-md-4 my-auto pt-2">
                                         <div class="view z-depth-1">
-                                            <img src="https://trax-imagery.s3.us-east-2.amazonaws.com/image015.png" alt="" class="img-fluid">
+                                            <img src="https://trax-imagery.s3.us-east-2.amazonaws.com/image015.png"
+                                                alt="" class="img-fluid">
                                         </div>
                                     </div>
                                 </div>
@@ -387,9 +406,9 @@
                             <h5 class="text-uppercase mb-0 py-1">
                                 <ul class="responsive-col text-center pl-0 py-auto">
                                     <li class="table-col">
-                                        <div class="col col-3"><a class="black font-weight-bold" data-toggle="collapse" href="#collapse9"
-                                            aria-expanded="false" aria-controls="collapse9"><i style="font-size: 20px;"
-                                            class='bx bx-plus'></i>TX4229AU8</a></div>
+                                        <div class="col col-3"><a class="black font-weight-bold" data-toggle="collapse"
+                                                href="#collapse9" aria-expanded="false" aria-controls="collapse9"><i
+                                                    style="font-size: 20px;" class='bx bx-plus'></i>TX4229AU8</a></div>
                                         <div class="col col-3">Clothing Tag</div>
                                         <div class="col col-3">Garment Tracking</div>
                                         <div class="col col-2">29 x 49(mm)</div>
@@ -403,12 +422,14 @@
                                 <div class="row my-4">
                                     <div class="col-md-8 text-center">
                                         <h2 class="font-weight-bold mb-3 black-text">Std. Form Factor Dipole</h2>
-        
-                                        <a class="btn-learn-more text-center" href="pdf/example.pdf">Data Sheet</a>
+
+                                        <button type="button" class="btn btn-learn-more text-center" data-toggle="modal"
+                                            data-target="#modal-one" data-modal-type="modal-one">Data Sheet</button>
                                     </div>
                                     <div class="col-md-4 my-auto pt-2">
                                         <div class="view z-depth-1">
-                                            <img src="https://trax-imagery.s3.us-east-2.amazonaws.com/image017.png" alt="" class="img-fluid">
+                                            <img src="https://trax-imagery.s3.us-east-2.amazonaws.com/image017.png"
+                                                alt="" class="img-fluid">
                                         </div>
                                     </div>
                                 </div>
@@ -420,9 +441,9 @@
                             <h5 class="text-uppercase mb-0 py-1">
                                 <ul class="responsive-col text-center pl-0 py-auto">
                                     <li class="table-col">
-                                        <div class="col col-3"><a class="black font-weight-bold" data-toggle="collapse" href="#collapse10"
-                                            aria-expanded="false" aria-controls="collapse10"><i style="font-size: 20px;"
-                                            class='bx bx-plus'></i>TX7315AU8</a></div>
+                                        <div class="col col-3"><a class="black font-weight-bold" data-toggle="collapse"
+                                                href="#collapse10" aria-expanded="false" aria-controls="collapse10"><i
+                                                    style="font-size: 20px;" class='bx bx-plus'></i>TX7315AU8</a></div>
                                         <div class="col col-3">Dielectric Tag</div>
                                         <div class="col col-3">Tagging Dielectric Materials</div>
                                         <div class="col col-2">15 x 73(mm)</div>
@@ -436,12 +457,14 @@
                                 <div class="row my-4">
                                     <div class="col-md-8 text-center">
                                         <h2 class="font-weight-bold mb-3 black-text">Std. Form Factor Dipole</h2>
-        
-                                        <a class="btn-learn-more text-center" href="pdf/example.pdf">Data Sheet</a>
+
+                                        <button type="button" class="btn btn-learn-more text-center" data-toggle="modal"
+                                            data-target="#modal-one" data-modal-type="modal-one">Data Sheet</button>
                                     </div>
                                     <div class="col-md-4 my-auto pt-2">
                                         <div class="view z-depth-1">
-                                            <img src="https://trax-imagery.s3.us-east-2.amazonaws.com/image019.png" alt="" class="img-fluid">
+                                            <img src="https://trax-imagery.s3.us-east-2.amazonaws.com/image019.png"
+                                                alt="" class="img-fluid">
                                         </div>
                                     </div>
                                 </div>
@@ -453,12 +476,12 @@
                             <h5 class="text-uppercase mb-0 py-1">
                                 <ul class="responsive-col text-center pl-0 py-auto">
                                     <li class="table-col">
-                                        <div class="col col-3"><a class="black font-weight-bold" data-toggle="collapse" href="#collapse11"
-                                            aria-expanded="false" aria-controls="collapse11"><i style="font-size: 20px;"
-                                            class='bx bx-plus'></i>TX7315A4QT</a></div>
-                                            <div class="col col-3">Dielectric Tag</div>
-                                            <div class="col col-3">Tagging Dielectric Materials</div>
-                                            <div class="col col-2">15 x 73(mm)</div>
+                                        <div class="col col-3"><a class="black font-weight-bold" data-toggle="collapse"
+                                                href="#collapse11" aria-expanded="false" aria-controls="collapse11"><i
+                                                    style="font-size: 20px;" class='bx bx-plus'></i>TX7315A4QT</a></div>
+                                        <div class="col col-3">Dielectric Tag</div>
+                                        <div class="col col-3">Tagging Dielectric Materials</div>
+                                        <div class="col col-2">15 x 73(mm)</div>
                                     </li>
                                 </ul>
                             </h5>
@@ -469,12 +492,14 @@
                                 <div class="row my-4">
                                     <div class="col-md-8 text-center">
                                         <h2 class="font-weight-bold mb-3 black-text">Std. Form Factor Dipole</h2>
-        
-                                        <a class="btn-learn-more text-center" href="pdf/example.pdf">Data Sheet</a>
+
+                                        <button type="button" class="btn btn-learn-more text-center" data-toggle="modal"
+                                            data-target="#modal-one" data-modal-type="modal-one">Data Sheet</button>
                                     </div>
                                     <div class="col-md-4 my-auto pt-2">
                                         <div class="view z-depth-1">
-                                            <img src="https://trax-imagery.s3.us-east-2.amazonaws.com/image020.png" alt="" class="img-fluid">
+                                            <img src="https://trax-imagery.s3.us-east-2.amazonaws.com/image020.png"
+                                                alt="" class="img-fluid">
                                         </div>
                                     </div>
                                 </div>
@@ -486,12 +511,12 @@
                             <h5 class="text-uppercase mb-0 py-1">
                                 <ul class="responsive-col text-center pl-0 py-auto">
                                     <li class="table-col">
-                                        <div class="col col-3"><a class="black font-weight-bold" data-toggle="collapse" href="#collapse12"
-                                            aria-expanded="false" aria-controls="collapse12"><i style="font-size: 20px;"
-                                            class='bx bx-plus'></i>TX7315A7XM</a></div>
-                                            <div class="col col-3">Dielectric Tag</div>
-                                            <div class="col col-3">Tagging Dielectric Materials</div>
-                                            <div class="col col-2">15 x 73(mm)</div>
+                                        <div class="col col-3"><a class="black font-weight-bold" data-toggle="collapse"
+                                                href="#collapse12" aria-expanded="false" aria-controls="collapse12"><i
+                                                    style="font-size: 20px;" class='bx bx-plus'></i>TX7315A7XM</a></div>
+                                        <div class="col col-3">Dielectric Tag</div>
+                                        <div class="col col-3">Tagging Dielectric Materials</div>
+                                        <div class="col col-2">15 x 73(mm)</div>
                                     </li>
                                 </ul>
                             </h5>
@@ -502,12 +527,14 @@
                                 <div class="row my-4">
                                     <div class="col-md-8 text-center">
                                         <h2 class="font-weight-bold mb-3 black-text">Std. Form Factor Dipole</h2>
-        
-                                        <a class="btn-learn-more text-center" href="pdf/example.pdf">Data Sheet</a>
+
+                                        <button type="button" class="btn btn-learn-more text-center" data-toggle="modal"
+                                            data-target="#modal-one" data-modal-type="modal-one">Data Sheet</button>
                                     </div>
                                     <div class="col-md-4 my-auto pt-2">
                                         <div class="view z-depth-1">
-                                            <img src="https://trax-imagery.s3.us-east-2.amazonaws.com/image021.png" alt="" class="img-fluid">
+                                            <img src="https://trax-imagery.s3.us-east-2.amazonaws.com/image021.png"
+                                                alt="" class="img-fluid">
                                         </div>
                                     </div>
                                 </div>
@@ -520,7 +547,7 @@
             </div>
         </div>
     </div>
-    <div class="container">
+    <div class="container solCont">
         <div class="row justify-content-center">
             <div class="container sol-type">
                 <h2>NFC</h2>
@@ -546,9 +573,9 @@
                             <h5 class="text-uppercase mb-0 py-1">
                                 <ul class="responsive-col text-center pl-0 py-auto">
                                     <li class="table-col">
-                                        <div class="col col-3"><a class="black font-weight-bold" data-toggle="collapse" href="#collapse13"
-                                            aria-expanded="false" aria-controls="collapse13"><i style="font-size: 20px;"
-                                            class='bx bx-plus'></i>TX5050AU8</a></div>
+                                        <div class="col col-3"><a class="black font-weight-bold" data-toggle="collapse"
+                                                href="#collapse13" aria-expanded="false" aria-controls="collapse13"><i
+                                                    style="font-size: 20px;" class='bx bx-plus'></i>TX5050AU8</a></div>
                                         <div class="col col-3">Omnidierectional Tag</div>
                                         <div class="col col-3">Asset Tagging with Problematic Direction</div>
                                         <div class="col col-2">50 x 50(mm)</div>
@@ -562,12 +589,14 @@
                                 <div class="row my-4">
                                     <div class="col-md-8 text-center">
                                         <h2 class="font-weight-bold mb-3 black-text">Std. Form Factor Dipole</h2>
-        
-                                        <a class="btn-learn-more text-center" href="pdf/example.pdf">Data Sheet</a>
+
+                                        <button type="button" class="btn btn-learn-more text-center" data-toggle="modal"
+                                            data-target="#modal-one" data-modal-type="modal-one">Data Sheet</button>
                                     </div>
                                     <div class="col-md-4 my-auto pt-2">
                                         <div class="view z-depth-1">
-                                            <img src="https://trax-imagery.s3.us-east-2.amazonaws.com/image024.png" alt="" class="img-fluid">
+                                            <img src="https://trax-imagery.s3.us-east-2.amazonaws.com/image024.png"
+                                                alt="" class="img-fluid">
                                         </div>
                                     </div>
                                 </div>
@@ -579,11 +608,11 @@
                             <h5 class="text-uppercase mb-0 py-1">
                                 <ul class="responsive-col text-center pl-0 py-auto">
                                     <li class="table-col">
-                                        <div class="col col-3"><a class="black font-weight-bold" data-toggle="collapse" href="#collapse14"
-                                            aria-expanded="false" aria-controls="collapse14"><i style="font-size: 20px;"
-                                            class='bx bx-plus'></i>TX26AU8</a></div>
+                                        <div class="col col-3"><a class="black font-weight-bold" data-toggle="collapse"
+                                                href="#collapse14" aria-expanded="false" aria-controls="collapse14"><i
+                                                    style="font-size: 20px;" class='bx bx-plus'></i>TX26AU8</a></div>
                                         <div class="col col-3">Small Form Factor Antenna</div>
-                                        <div class="col col-3">	Small form factor asset tracking</div>
+                                        <div class="col col-3"> Small form factor asset tracking</div>
                                         <div class="col col-2">R=26 (mm)</div>
                                     </li>
                                 </ul>
@@ -595,12 +624,14 @@
                                 <div class="row my-4">
                                     <div class="col-md-8 text-center">
                                         <h2 class="font-weight-bold mb-3 black-text">Std. Form Factor Dipole</h2>
-        
-                                        <a class="btn-learn-more text-center" href="pdf/example.pdf">Data Sheet</a>
+
+                                        <button type="button" class="btn btn-learn-more text-center" data-toggle="modal"
+                                            data-target="#modal-one" data-modal-type="modal-one">Data Sheet</button>
                                     </div>
                                     <div class="col-md-4 my-auto pt-2">
                                         <div class="view z-depth-1">
-                                            <img src="https://trax-imagery.s3.us-east-2.amazonaws.com/image026.png" alt="" class="img-fluid">
+                                            <img src="https://trax-imagery.s3.us-east-2.amazonaws.com/image026.png"
+                                                alt="" class="img-fluid">
                                         </div>
                                     </div>
                                 </div>
@@ -612,12 +643,12 @@
                             <h5 class="text-uppercase mb-0 py-1">
                                 <ul class="responsive-col text-center pl-0 py-auto">
                                     <li class="table-col">
-                                        <div class="col col-3"><a class="black font-weight-bold" data-toggle="collapse" href="#collapse15"
-                                            aria-expanded="false" aria-controls="collapse15"><i style="font-size: 20px;"
-                                            class='bx bx-plus'></i>TX22AU8</a></div>
-                                            <div class="col col-3">Small Form Factor Antenna</div>
-                                            <div class="col col-3">	Small form factor asset tracking</div>
-                                            <div class="col col-2">R=22 (mm)</div>
+                                        <div class="col col-3"><a class="black font-weight-bold" data-toggle="collapse"
+                                                href="#collapse15" aria-expanded="false" aria-controls="collapse15"><i
+                                                    style="font-size: 20px;" class='bx bx-plus'></i>TX22AU8</a></div>
+                                        <div class="col col-3">Small Form Factor Antenna</div>
+                                        <div class="col col-3"> Small form factor asset tracking</div>
+                                        <div class="col col-2">R=22 (mm)</div>
                                     </li>
                                 </ul>
                             </h5>
@@ -628,12 +659,14 @@
                                 <div class="row my-4">
                                     <div class="col-md-8 text-center">
                                         <h2 class="font-weight-bold mb-3 black-text">Std. Form Factor Dipole</h2>
-        
-                                        <a class="btn-learn-more text-center" href="pdf/example.pdf">Data Sheet</a>
+
+                                        <button type="button" class="btn btn-learn-more text-center" data-toggle="modal"
+                                            data-target="#modal-one" data-modal-type="modal-one">Data Sheet</button>
                                     </div>
                                     <div class="col-md-4 my-auto pt-2">
                                         <div class="view z-depth-1">
-                                            <img src="https://trax-imagery.s3.us-east-2.amazonaws.com/image028.png" alt="" class="img-fluid">
+                                            <img src="https://trax-imagery.s3.us-east-2.amazonaws.com/image028.png"
+                                                alt="" class="img-fluid">
                                         </div>
                                     </div>
                                 </div>
@@ -645,9 +678,9 @@
                             <h5 class="text-uppercase mb-0 py-1">
                                 <ul class="responsive-col text-center pl-0 py-auto">
                                     <li class="table-col">
-                                        <div class="col col-3"><a class="black font-weight-bold" data-toggle="collapse" href="#collapse16"
-                                            aria-expanded="false" aria-controls="collapse16"><i style="font-size: 20px;"
-                                            class='bx bx-plus'></i>TX08AU8</a></div>
+                                        <div class="col col-3"><a class="black font-weight-bold" data-toggle="collapse"
+                                                href="#collapse16" aria-expanded="false" aria-controls="collapse16"><i
+                                                    style="font-size: 20px;" class='bx bx-plus'></i>TX08AU8</a></div>
                                         <div class="col col-3">UHF Loop</div>
                                         <div class="col col-3">Very small form factor tagging</div>
                                         <div class="col col-2">R=8 (mm)</div>
@@ -661,12 +694,14 @@
                                 <div class="row my-4">
                                     <div class="col-md-8 text-center">
                                         <h2 class="font-weight-bold mb-3 black-text">Std. Form Factor Dipole</h2>
-        
-                                        <a class="btn-learn-more text-center" href="pdf/example.pdf">Data Sheet</a>
+
+                                        <button type="button" class="btn btn-learn-more text-center" data-toggle="modal"
+                                            data-target="#modal-one" data-modal-type="modal-one">Data Sheet</button>
                                     </div>
                                     <div class="col-md-4 my-auto pt-2">
                                         <div class="view z-depth-1">
-                                            <img src="https://trax-imagery.s3.us-east-2.amazonaws.com/image030.png" alt="" class="img-fluid">
+                                            <img src="https://trax-imagery.s3.us-east-2.amazonaws.com/image030.png"
+                                                alt="" class="img-fluid">
                                         </div>
                                     </div>
                                 </div>
@@ -678,9 +713,9 @@
                             <h5 class="text-uppercase mb-0 py-1">
                                 <ul class="responsive-col text-center pl-0 py-auto">
                                     <li class="table-col">
-                                        <div class="col col-3"><a class="black font-weight-bold" data-toggle="collapse" href="#collapse17"
-                                            aria-expanded="false" aria-controls="collapse17"><i style="font-size: 20px;"
-                                            class='bx bx-plus'></i>TX11010AU8</a></div>
+                                        <div class="col col-3"><a class="black font-weight-bold" data-toggle="collapse"
+                                                href="#collapse17" aria-expanded="false" aria-controls="collapse17"><i
+                                                    style="font-size: 20px;" class='bx bx-plus'></i>TX11010AU8</a></div>
                                         <div class="col col-3">UHF Loop</div>
                                         <div class="col col-3">Very small form factor tagging</div>
                                         <div class="col col-2">10 x 10(mm)</div>
@@ -694,12 +729,14 @@
                                 <div class="row my-4">
                                     <div class="col-md-8 text-center">
                                         <h2 class="font-weight-bold mb-3 black-text">Std. Form Factor Dipole</h2>
-        
-                                        <a class="btn-learn-more text-center" href="pdf/example.pdf">Data Sheet</a>
+
+                                        <button type="button" class="btn btn-learn-more text-center" data-toggle="modal"
+                                            data-target="#modal-one" data-modal-type="modal-one">Data Sheet</button>
                                     </div>
                                     <div class="col-md-4 my-auto pt-2">
                                         <div class="view z-depth-1">
-                                            <img src="https://trax-imagery.s3.us-east-2.amazonaws.com/image032.png" alt="" class="img-fluid">
+                                            <img src="https://trax-imagery.s3.us-east-2.amazonaws.com/image032.png"
+                                                alt="" class="img-fluid">
                                         </div>
                                     </div>
                                 </div>
@@ -711,9 +748,9 @@
                             <h5 class="text-uppercase mb-0 py-1">
                                 <ul class="responsive-col text-center pl-0 py-auto">
                                     <li class="table-col">
-                                        <div class="col col-3"><a class="black font-weight-bold" data-toggle="collapse" href="#collapse18"
-                                            aria-expanded="false" aria-controls="collapse18"><i style="font-size: 20px;"
-                                            class='bx bx-plus'></i>TX12503AU8</a></div>
+                                        <div class="col col-3"><a class="black font-weight-bold" data-toggle="collapse"
+                                                href="#collapse18" aria-expanded="false" aria-controls="collapse18"><i
+                                                    style="font-size: 20px;" class='bx bx-plus'></i>TX12503AU8</a></div>
                                         <div class="col col-3">Ultra Thin</div>
                                         <div class="col col-3">Tagging Thin Objects</div>
                                         <div class="col col-2">3 x 125(mm)</div>
@@ -727,12 +764,14 @@
                                 <div class="row my-4">
                                     <div class="col-md-8 text-center">
                                         <h2 class="font-weight-bold mb-3 black-text">Std. Form Factor Dipole</h2>
-        
-                                        <a class="btn-learn-more text-center" href="pdf/example.pdf">Data Sheet</a>
+
+                                        <button type="button" class="btn btn-learn-more text-center" data-toggle="modal"
+                                            data-target="#modal-one" data-modal-type="modal-one">Data Sheet</button>
                                     </div>
                                     <div class="col-md-4 my-auto pt-2">
                                         <div class="view z-depth-1">
-                                            <img src="https://trax-imagery.s3.us-east-2.amazonaws.com/image034.png" alt="" class="img-fluid">
+                                            <img src="https://trax-imagery.s3.us-east-2.amazonaws.com/image034.png"
+                                                alt="" class="img-fluid">
                                         </div>
                                     </div>
                                 </div>
@@ -744,7 +783,7 @@
 
             </div>
         </div>
-        <div class="container">
+        <div class="container solCont">
             <div class="row justify-content-center">
                 <div class="container sol-type">
                     <h2>Tire Tags</h2>
@@ -770,9 +809,10 @@
                                 <h5 class="text-uppercase mb-0 py-1">
                                     <ul class="responsive-col text-center pl-0 py-auto">
                                         <li class="table-col">
-                                            <div class="col col-3"><a class="black font-weight-bold" data-toggle="collapse" href="#collapse19"
-                                                aria-expanded="false" aria-controls="collapse19"><i style="font-size: 20px;"
-                                                class='bx bx-plus'></i>DT001</a></div>
+                                            <div class="col col-3"><a class="black font-weight-bold"
+                                                    data-toggle="collapse" href="#collapse19" aria-expanded="false"
+                                                    aria-controls="collapse19"><i style="font-size: 20px;"
+                                                        class='bx bx-plus'></i>DT001</a></div>
                                             <div class="col col-3">Destructable Tag</div>
                                             <div class="col col-3">Tamper Proof Tagging </div>
                                             <div class="col col-2">10 x 62(mm)</div>
@@ -786,12 +826,15 @@
                                     <div class="row my-4">
                                         <div class="col-md-8 text-center">
                                             <h2 class="font-weight-bold mb-3 black-text">Std. Form Factor Dipole</h2>
-            
-                                            <a class="btn-learn-more text-center" href="pdf/example.pdf">Data Sheet</a>
+
+                                            <button type="button" class="btn btn-learn-more text-center"
+                                                data-toggle="modal" data-target="#modal-one"
+                                                data-modal-type="modal-one">Data Sheet</button>
                                         </div>
                                         <div class="col-md-4 my-auto pt-2">
                                             <div class="view z-depth-1">
-                                                <img src="https://trax-imagery.s3.us-east-2.amazonaws.com/image036.png" alt="" class="img-fluid">
+                                                <img src="https://trax-imagery.s3.us-east-2.amazonaws.com/image036.png"
+                                                    alt="" class="img-fluid">
                                             </div>
                                         </div>
                                     </div>
@@ -803,12 +846,13 @@
                                 <h5 class="text-uppercase mb-0 py-1">
                                     <ul class="responsive-col text-center pl-0 py-auto">
                                         <li class="table-col">
-                                            <div class="col col-3"><a class="black font-weight-bold" data-toggle="collapse" href="#collapse20"
-                                                aria-expanded="false" aria-controls="collapse20"><i style="font-size: 20px;"
-                                                class='bx bx-plus'></i>DT002</a></div>
-                                                <div class="col col-3">Destructable Tag</div>
-                                                <div class="col col-3">Tamper Proof Tagging </div>
-                                                <div class="col col-2">10 x 70(mm)</div>
+                                            <div class="col col-3"><a class="black font-weight-bold"
+                                                    data-toggle="collapse" href="#collapse20" aria-expanded="false"
+                                                    aria-controls="collapse20"><i style="font-size: 20px;"
+                                                        class='bx bx-plus'></i>DT002</a></div>
+                                            <div class="col col-3">Destructable Tag</div>
+                                            <div class="col col-3">Tamper Proof Tagging </div>
+                                            <div class="col col-2">10 x 70(mm)</div>
                                         </li>
                                     </ul>
                                 </h5>
@@ -819,12 +863,15 @@
                                     <div class="row my-4">
                                         <div class="col-md-8 text-center">
                                             <h2 class="font-weight-bold mb-3 black-text">Std. Form Factor Dipole</h2>
-            
-                                            <a class="btn-learn-more text-center" href="pdf/example.pdf">Data Sheet</a>
+
+                                            <button type="button" class="btn btn-learn-more text-center"
+                                                data-toggle="modal" data-target="#modal-one"
+                                                data-modal-type="modal-one">Data Sheet</button>
                                         </div>
                                         <div class="col-md-4 my-auto pt-2">
                                             <div class="view z-depth-1">
-                                                <img src="https://trax-imagery.s3.us-east-2.amazonaws.com/image037.png" alt="" class="img-fluid">
+                                                <img src="https://trax-imagery.s3.us-east-2.amazonaws.com/image037.png"
+                                                    alt="" class="img-fluid">
                                             </div>
                                         </div>
                                     </div>
@@ -836,12 +883,13 @@
                                 <h5 class="text-uppercase mb-0 py-1">
                                     <ul class="responsive-col text-center pl-0 py-auto">
                                         <li class="table-col">
-                                            <div class="col col-3"><a class="black font-weight-bold" data-toggle="collapse" href="#collapse21"
-                                                aria-expanded="false" aria-controls="collapse21"><i style="font-size: 20px;"
-                                                class='bx bx-plus'></i>TX6810AH3</a></div>
-                                                <div class="col col-3">Destructable Tag</div>
-                                                <div class="col col-3">Tamper Proof Tagging </div>
-                                                <div class="col col-2">10 x 68(mm)</div>
+                                            <div class="col col-3"><a class="black font-weight-bold"
+                                                    data-toggle="collapse" href="#collapse21" aria-expanded="false"
+                                                    aria-controls="collapse21"><i style="font-size: 20px;"
+                                                        class='bx bx-plus'></i>TX6810AH3</a></div>
+                                            <div class="col col-3">Destructable Tag</div>
+                                            <div class="col col-3">Tamper Proof Tagging </div>
+                                            <div class="col col-2">10 x 68(mm)</div>
                                         </li>
                                     </ul>
                                 </h5>
@@ -852,12 +900,15 @@
                                     <div class="row my-4">
                                         <div class="col-md-8 text-center">
                                             <h2 class="font-weight-bold mb-3 black-text">Std. Form Factor Dipole</h2>
-            
-                                            <a class="btn-learn-more text-center" href="pdf/example.pdf">Data Sheet</a>
+
+                                            <button type="button" class="btn btn-learn-more text-center"
+                                                data-toggle="modal" data-target="#modal-one"
+                                                data-modal-type="modal-one">Data Sheet</button>
                                         </div>
                                         <div class="col-md-4 my-auto pt-2">
                                             <div class="view z-depth-1">
-                                                <img src="https://trax-imagery.s3.us-east-2.amazonaws.com/image040.png" alt="" class="img-fluid">
+                                                <img src="https://trax-imagery.s3.us-east-2.amazonaws.com/image040.png"
+                                                    alt="" class="img-fluid">
                                             </div>
                                         </div>
                                     </div>
@@ -869,9 +920,10 @@
                                 <h5 class="text-uppercase mb-0 py-1">
                                     <ul class="responsive-col text-center pl-0 py-auto">
                                         <li class="table-col">
-                                            <div class="col col-3"><a class="black font-weight-bold" data-toggle="collapse" href="#collapse22"
-                                                aria-expanded="false" aria-controls="collapse22"><i style="font-size: 20px;"
-                                                class='bx bx-plus'></i>TX8220AU8</a></div>
+                                            <div class="col col-3"><a class="black font-weight-bold"
+                                                    data-toggle="collapse" href="#collapse22" aria-expanded="false"
+                                                    aria-controls="collapse22"><i style="font-size: 20px;"
+                                                        class='bx bx-plus'></i>TX8220AU8</a></div>
                                             <div class="col col-3">Wide-Band Tag</div>
                                             <div class="col col-3">Tagging Large varietys of surfaces</div>
                                             <div class="col col-2">20 x 82(mm)</div>
@@ -885,12 +937,15 @@
                                     <div class="row my-4">
                                         <div class="col-md-8 text-center">
                                             <h2 class="font-weight-bold mb-3 black-text">Std. Form Factor Dipole</h2>
-            
-                                            <a class="btn-learn-more text-center" href="pdf/example.pdf">Data Sheet</a>
+
+                                            <button type="button" class="btn btn-learn-more text-center"
+                                                data-toggle="modal" data-target="#modal-one"
+                                                data-modal-type="modal-one">Data Sheet</button>
                                         </div>
                                         <div class="col-md-4 my-auto pt-2">
                                             <div class="view z-depth-1">
-                                                <img src="https://trax-imagery.s3.us-east-2.amazonaws.com/image044.png" alt="" class="img-fluid">
+                                                <img src="https://trax-imagery.s3.us-east-2.amazonaws.com/image044.png"
+                                                    alt="" class="img-fluid">
                                             </div>
                                         </div>
                                     </div>
@@ -902,9 +957,10 @@
                                 <h5 class="text-uppercase mb-0 py-1">
                                     <ul class="responsive-col text-center pl-0 py-auto">
                                         <li class="table-col">
-                                            <div class="col col-3"><a class="black font-weight-bold" data-toggle="collapse" href="#collapse23"
-                                                aria-expanded="false" aria-controls="collapse23"><i style="font-size: 20px;"
-                                                class='bx bx-plus'></i>TX4410AH3</a></div>
+                                            <div class="col col-3"><a class="black font-weight-bold"
+                                                    data-toggle="collapse" href="#collapse23" aria-expanded="false"
+                                                    aria-controls="collapse23"><i style="font-size: 20px;"
+                                                        class='bx bx-plus'></i>TX4410AH3</a></div>
                                             <div class="col col-3">Metal Tagging</div>
                                             <div class="col col-3">General Asset Tracking</div>
                                             <div class="col col-2">44 x 10(mm)-Folded</div>
@@ -918,12 +974,15 @@
                                     <div class="row my-4">
                                         <div class="col-md-8 text-center">
                                             <h2 class="font-weight-bold mb-3 black-text">Std. Form Factor Dipole</h2>
-            
-                                            <a class="btn-learn-more text-center" href="pdf/example.pdf">Data Sheet</a>
+
+                                            <button type="button" class="btn btn-learn-more text-center"
+                                                data-toggle="modal" data-target="#modal-one"
+                                                data-modal-type="modal-one">Data Sheet</button>
                                         </div>
                                         <div class="col-md-4 my-auto pt-2">
                                             <div class="view z-depth-1">
-                                                <img src="https://trax-imagery.s3.us-east-2.amazonaws.com/image045.png" alt="" class="img-fluid">
+                                                <img src="https://trax-imagery.s3.us-east-2.amazonaws.com/image045.png"
+                                                    alt="" class="img-fluid">
                                             </div>
                                         </div>
                                     </div>
@@ -935,11 +994,13 @@
                                 <h5 class="text-uppercase mb-0 py-1">
                                     <ul class="responsive-col text-center pl-0 py-auto">
                                         <li class="table-col">
-                                            <div class="col col-3"><a class="black font-weight-bold" data-toggle="collapse" href="#collapse24"
-                                                aria-expanded="false" aria-controls="collapse24"><i style="font-size: 20px;"
-                                                class='bx bx-plus'></i>TX9122AUI2C</a></div>
+                                            <div class="col col-3"><a class="black font-weight-bold"
+                                                    data-toggle="collapse" href="#collapse24" aria-expanded="false"
+                                                    aria-controls="collapse24"><i style="font-size: 20px;"
+                                                        class='bx bx-plus'></i>TX9122AUI2C</a></div>
                                             <div class="col col-3">Data Tag</div>
-                                            <div class="col col-3">Interfacing data between microprocessor and RF reader</div>
+                                            <div class="col col-3">Interfacing data between microprocessor and RF reader
+                                            </div>
                                             <div class="col col-2">9 x 122(mm)</div>
                                         </li>
                                     </ul>
@@ -951,12 +1012,15 @@
                                     <div class="row my-4">
                                         <div class="col-md-8 text-center">
                                             <h2 class="font-weight-bold mb-3 black-text">Std. Form Factor Dipole</h2>
-            
-                                            <a class="btn-learn-more text-center" href="pdf/example.pdf">Data Sheet</a>
+
+                                            <button type="button" class="btn btn-learn-more text-center"
+                                                data-toggle="modal" data-target="#modal-one"
+                                                data-modal-type="modal-one">Data Sheet</button>
                                         </div>
                                         <div class="col-md-4 my-auto pt-2">
                                             <div class="view z-depth-1">
-                                                <img src="https://trax-imagery.s3.us-east-2.amazonaws.com/image049.png" alt="" class="img-fluid">
+                                                <img src="https://trax-imagery.s3.us-east-2.amazonaws.com/image049.png"
+                                                    alt="" class="img-fluid">
                                             </div>
                                         </div>
                                     </div>
@@ -968,9 +1032,10 @@
                                 <h5 class="text-uppercase mb-0 py-1">
                                     <ul class="responsive-col text-center pl-0 py-auto">
                                         <li class="table-col">
-                                            <div class="col col-3"><a class="black font-weight-bold" data-toggle="collapse" href="#collapse25"
-                                                aria-expanded="false" aria-controls="collapse25"><i style="font-size: 20px;"
-                                                class='bx bx-plus'></i>TX5020AU8</a></div>
+                                            <div class="col col-3"><a class="black font-weight-bold"
+                                                    data-toggle="collapse" href="#collapse25" aria-expanded="false"
+                                                    aria-controls="collapse25"><i style="font-size: 20px;"
+                                                        class='bx bx-plus'></i>TX5020AU8</a></div>
                                             <div class="col col-3">Split Ring Resonator</div>
                                             <div class="col col-3">N/A</div>
                                             <div class="col col-2">20 x 50(mm)</div>
@@ -984,12 +1049,15 @@
                                     <div class="row my-4">
                                         <div class="col-md-8 text-center">
                                             <h2 class="font-weight-bold mb-3 black-text">Std. Form Factor Dipole</h2>
-            
-                                            <a class="btn-learn-more text-center" href="pdf/example.pdf">Data Sheet</a>
+
+                                            <button type="button" class="btn btn-learn-more text-center"
+                                                data-toggle="modal" data-target="#modal-one"
+                                                data-modal-type="modal-one">Data Sheet</button>
                                         </div>
                                         <div class="col-md-4 my-auto pt-2">
                                             <div class="view z-depth-1">
-                                                <img src="https://trax-imagery.s3.us-east-2.amazonaws.com/image050.png" alt="" class="img-fluid">
+                                                <img src="https://trax-imagery.s3.us-east-2.amazonaws.com/image050.png"
+                                                    alt="" class="img-fluid">
                                             </div>
                                         </div>
                                     </div>
@@ -1001,9 +1069,10 @@
                                 <h5 class="text-uppercase mb-0 py-1">
                                     <ul class="responsive-col text-center pl-0 py-auto">
                                         <li class="table-col">
-                                            <div class="col col-3"><a class="black font-weight-bold" data-toggle="collapse" href="#collapse26"
-                                                aria-expanded="false" aria-controls="collapse26"><i style="font-size: 20px;"
-                                                class='bx bx-plus'></i>TX4949ASLIX2</a></div>
+                                            <div class="col col-3"><a class="black font-weight-bold"
+                                                    data-toggle="collapse" href="#collapse26" aria-expanded="false"
+                                                    aria-controls="collapse26"><i style="font-size: 20px;"
+                                                        class='bx bx-plus'></i>TX4949ASLIX2</a></div>
                                             <div class="col col-3">HF</div>
                                             <div class="col col-3">Document Tagging</div>
                                             <div class="col col-2">49 x 49(mm)</div>
@@ -1017,12 +1086,15 @@
                                     <div class="row my-4">
                                         <div class="col-md-8 text-center">
                                             <h2 class="font-weight-bold mb-3 black-text">Std. Form Factor Dipole</h2>
-            
-                                            <a class="btn-learn-more text-center" href="pdf/example.pdf">Data Sheet</a>
+
+                                            <button type="button" class="btn btn-learn-more text-center"
+                                                data-toggle="modal" data-target="#modal-one"
+                                                data-modal-type="modal-one">Data Sheet</button>
                                         </div>
                                         <div class="col-md-4 my-auto pt-2">
                                             <div class="view z-depth-1">
-                                                <img src="https://trax-imagery.s3.us-east-2.amazonaws.com/image052.png" alt="" class="img-fluid">
+                                                <img src="https://trax-imagery.s3.us-east-2.amazonaws.com/image052.png"
+                                                    alt="" class="img-fluid">
                                             </div>
                                         </div>
                                     </div>
@@ -1034,9 +1106,10 @@
                                 <h5 class="text-uppercase mb-0 py-1">
                                     <ul class="responsive-col text-center pl-0 py-auto">
                                         <li class="table-col">
-                                            <div class="col col-3"><a class="black font-weight-bold" data-toggle="collapse" href="#collapse27"
-                                                aria-expanded="false" aria-controls="collapse27"><i style="font-size: 20px;"
-                                                class='bx bx-plus'></i>TX2722ASLIX2</a></div>
+                                            <div class="col col-3"><a class="black font-weight-bold"
+                                                    data-toggle="collapse" href="#collapse27" aria-expanded="false"
+                                                    aria-controls="collapse27"><i style="font-size: 20px;"
+                                                        class='bx bx-plus'></i>TX2722ASLIX2</a></div>
                                             <div class="col col-3">HF</div>
                                             <div class="col col-3">HF Liquid tagging</div>
                                             <div class="col col-2">22 x 27(mm)</div>
@@ -1050,12 +1123,15 @@
                                     <div class="row my-4">
                                         <div class="col-md-8 text-center">
                                             <h2 class="font-weight-bold mb-3 black-text">Std. Form Factor Dipole</h2>
-            
-                                            <a class="btn-learn-more text-center" href="pdf/example.pdf">Data Sheet</a>
+
+                                            <button type="button" class="btn btn-learn-more text-center"
+                                                data-toggle="modal" data-target="#modal-one"
+                                                data-modal-type="modal-one">Data Sheet</button>
                                         </div>
                                         <div class="col-md-4 my-auto pt-2">
                                             <div class="view z-depth-1">
-                                                <img src="https://trax-imagery.s3.us-east-2.amazonaws.com/image054.png" alt="" class="img-fluid">
+                                                <img src="https://trax-imagery.s3.us-east-2.amazonaws.com/image054.png"
+                                                    alt="" class="img-fluid">
                                             </div>
                                         </div>
                                     </div>
@@ -1067,9 +1143,10 @@
                                 <h5 class="text-uppercase mb-0 py-1">
                                     <ul class="responsive-col text-center pl-0 py-auto">
                                         <li class="table-col">
-                                            <div class="col col-3"><a class="black font-weight-bold" data-toggle="collapse" href="#collapse28"
-                                                aria-expanded="false" aria-controls="collapse28"><i style="font-size: 20px;"
-                                                class='bx bx-plus'></i>TX3823AUL</a></div>
+                                            <div class="col col-3"><a class="black font-weight-bold"
+                                                    data-toggle="collapse" href="#collapse28" aria-expanded="false"
+                                                    aria-controls="collapse28"><i style="font-size: 20px;"
+                                                        class='bx bx-plus'></i>TX3823AUL</a></div>
                                             <div class="col col-3">HF</div>
                                             <div class="col col-3">Smaller form factor document HF tagging</div>
                                             <div class="col col-2">23 x 38(mm)</div>
@@ -1083,12 +1160,15 @@
                                     <div class="row my-4">
                                         <div class="col-md-8 text-center">
                                             <h2 class="font-weight-bold mb-3 black-text">Std. Form Factor Dipole</h2>
-            
-                                            <a class="btn-learn-more text-center" href="pdf/example.pdf">Data Sheet</a>
+
+                                            <button type="button" class="btn btn-learn-more text-center"
+                                                data-toggle="modal" data-target="#modal-one"
+                                                data-modal-type="modal-one">Data Sheet</button>
                                         </div>
                                         <div class="col-md-4 my-auto pt-2">
                                             <div class="view z-depth-1">
-                                                <img src="https://trax-imagery.s3.us-east-2.amazonaws.com/image056.png" alt="" class="img-fluid">
+                                                <img src="https://trax-imagery.s3.us-east-2.amazonaws.com/image056.png"
+                                                    alt="" class="img-fluid">
                                             </div>
                                         </div>
                                     </div>
@@ -1100,9 +1180,10 @@
                                 <h5 class="text-uppercase mb-0 py-1">
                                     <ul class="responsive-col text-center pl-0 py-auto">
                                         <li class="table-col">
-                                            <div class="col col-3"><a class="black font-weight-bold" data-toggle="collapse" href="#collapse29"
-                                                aria-expanded="false" aria-controls="collapse29"><i style="font-size: 20px;"
-                                                class='bx bx-plus'></i>NF001</a></div>
+                                            <div class="col col-3"><a class="black font-weight-bold"
+                                                    data-toggle="collapse" href="#collapse29" aria-expanded="false"
+                                                    aria-controls="collapse29"><i style="font-size: 20px;"
+                                                        class='bx bx-plus'></i>NF001</a></div>
                                             <div class="col col-3">NFC</div>
                                             <div class="col col-3">N/A</div>
                                             <div class="col col-2">13.5 x 20(mm)</div>
@@ -1116,19 +1197,22 @@
                                     <div class="row my-4">
                                         <div class="col-md-8 text-center">
                                             <h2 class="font-weight-bold mb-3 black-text">Std. Form Factor Dipole</h2>
-            
-                                            <a class="btn-learn-more text-center" href="pdf/example.pdf">Data Sheet</a>
+
+                                            <button type="button" class="btn btn-learn-more text-center"
+                                                data-toggle="modal" data-target="#modal-one"
+                                                data-modal-type="modal-one">Data Sheet</button>
                                         </div>
                                         <div class="col-md-4 my-auto pt-2">
                                             <div class="view z-depth-1">
-                                                <img src="https://trax-imagery.s3.us-east-2.amazonaws.com/image057.png" alt="" class="img-fluid">
+                                                <img src="https://trax-imagery.s3.us-east-2.amazonaws.com/image057.png"
+                                                    alt="" class="img-fluid">
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                       
+
                     </div>
                     <!--Accordion wrapper-->
 
@@ -1136,35 +1220,52 @@
             </div>
         </div>
     </div>
-   
- <!-- Footer -->
- <footer class="page-footer font-small unique-color-dark pt-4">
+    <div id="modal-one" class="modal fade" modal-backdrop="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content justify-content-center">
+                <div class="modal-header">
+                    <h4 class="modal-title">Data Sheet Missing</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <h2>We Are Sorry!</h2>
+                    <p>As of right now, we do not have a data-sheet available for this product. However, it is being
+                        worked on as we speak. Please try and download this again in the near future. Thank you!</p>
 
-  <!-- Footer Elements -->
-  <div class="container-fluid">
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+    <!-- Footer -->
+    <footer class="page-footer font-small unique-color-dark pt-4">
 
-      <!-- Call to action -->
-      <ul class="list-unstyled list-inline text-center align-middle">
-          <li class="list-inline-item">
-              <h5 class="pb-1">Get In Touch!</h5>
-          </li>
-          <li class="list-inline-item">
-              <a href="contact.html" class="btn btn-outline-light btn-rounded waves-effect">Contact Us</a>
-          </li>
-      </ul>
-      <!-- Call to action -->
+        <!-- Footer Elements -->
+        <div class="container-fluid">
 
-  </div>
-  <!-- Footer Elements -->
+            <!-- Call to action -->
+            <ul class="list-unstyled list-inline text-center align-middle">
+                <li class="list-inline-item">
+                    <h5 class="pb-1">Get In Touch!</h5>
+                </li>
+                <li class="list-inline-item">
+                    <a href="contact.html" class="btn btn-outline-light btn-rounded waves-effect">Contact Us</a>
+                </li>
+            </ul>
+            <!-- Call to action -->
 
-  <!-- Copyright -->
-  <div class="footer-copyright text-center py-3">© 2020 Copyright:
-      <a href="index.html"> Trax RFID, LLC</a>
-  </div>
-  <!-- Copyright -->
+        </div>
+        <!-- Footer Elements -->
 
-</footer>
-<!-- Footer -->
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2020 Copyright:
+            <a href="index.html"> Trax RFID, LLC</a>
+        </div>
+        <!-- Copyright -->
+
+    </footer>
+    <!-- Footer -->
 
 
     <script src="vendor/jquery/jquery.min.js"></script>
@@ -1180,7 +1281,7 @@
     <script src="vendor/aos/aos.js"></script>
     <script src="vendor/jquery-sticky/jquery.sticky.js"></script>
 
-    <!-- <script src="script.js"></script> -->
+    <script src="script.js"></script>
 </body>
 
 </html>
