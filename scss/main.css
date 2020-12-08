@@ -1,10 +1,9 @@
 body {
-  font-family: 'Rubik', sans-serif;
+  font-family: 'lato', sans-serif;
 }
 
 .container {
   max-width: 1000px;
-  height: 100%;
   margin-left: auto;
   margin-right: auto;
   padding-left: 10px;
@@ -35,7 +34,7 @@ h2 small {
 
 .responsive-table .table-header {
   background-color: #95A5A6;
-  font-size: 16px;
+  font-size: 14px;
   text-transform: uppercase;
   letter-spacing: 0.03em;
 }
@@ -67,10 +66,12 @@ h2 small {
 }
 
 @media all and (max-width: 767px) {
-  
-  /* .responsive-table li {
+  .responsive-table .table-header {
+    display: none;
+  }
+  .responsive-table li {
     display: block;
-  } */
+  }
   .responsive-table .col {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%;

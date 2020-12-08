@@ -67,7 +67,7 @@ h6 {
 
 #header.header-scrolled {
     box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.1);
-    background-color: rgba(224, 224, 224, 0.904);
+    background-color: #fff;
 }
 
 /* #header.header-scrolled .nav-menu a  {
@@ -75,9 +75,9 @@ h6 {
 } */
 
 #header .logo img {
-    padding: 0;
+    padding: 10 0 0 0;
     margin: 0;
-    max-height: 100px;
+    max-height: 90px;
 }
 
 
@@ -279,11 +279,9 @@ h6 {
 
 #heroSolutions #heroText {
     padding-top: 75px;
+    backdrop-filter: blur(20px);
 }
 
-#heroSolutions #heroText {
-    padding-top: 75px;
-}
 
 #heroSolutions:before {
     content: "";
@@ -453,16 +451,23 @@ h6 {
 
 .newHero .newHeroText {
     position: absolute;
-    top: 50%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
+   
+}
+
+.newHero #newCard {
+    backdrop-filter: blur(5px);
+    border-radius: 50px;
 }
 
 .newHeroText h1 {
     font-family: 'Rubik', sans-serif;
-    font-size: 56px;
+    font-size: 66px;
     color: #fff;
     margin-bottom: 30px;
+    letter-spacing: .35em;
 }
 
 .newHeroText h5 {
@@ -521,8 +526,8 @@ h6 {
         padding-top: 60px;
     }
 
-    #hero h1 {
-        font-size: 32px;
+    #newHero h1 {
+        font-size: 46px;
         line-height: 36px;
     }
 
@@ -570,7 +575,7 @@ h6 {
 .about .content .btn-learn-more {
     font-family: "Poppins", sans-serif;
     font-weight: 500;
-    font-size: 14px;
+    font-size: 16px;
     letter-spacing: 1px;
     display: inline-block;
     padding: 12px 32px;
@@ -585,8 +590,8 @@ h6 {
 }
 
 .about .content .btn-learn-more:hover {
-    background: #005ac8;;
-    color: #fff;
+    background: #fff;
+    color: #005ac8 !important;
     text-decoration: none;
 }
 

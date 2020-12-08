@@ -1,4 +1,4 @@
-$(function () {
+jQuery(function ($) {
 
     // init the validator
     // validator files are included in the download package

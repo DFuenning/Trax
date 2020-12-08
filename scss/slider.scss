@@ -67,4 +67,28 @@ body {
             margin-right: 1em;
         }
     }
+    .card_body {
+        max-height: 200px;
+        margin: 0 auto;
+        max-width: 768px;
+        overflow: hidden;
+        padding: 50px;
+        position: relative;
+        color: white;
+        font-family: 'Lato';
+        position: relative;
+        text-align: center;
+        z-index: 0;
+        &:before {
+          content: '';
+          filter: blur(20px);
+          height: 100%;
+          left: 0;
+          position: absolute;
+          top: 0;
+          width: 100%;
+          z-index: -1;
+        }
+      }
+
 }
