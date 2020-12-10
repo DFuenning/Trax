@@ -3,14 +3,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap');
 
+body, html {
+    height: auto;
+    overflow-x: inherit;
+}
+
 body {
     font-family: 'Rubik', sans-serif;
     color: #444444;
+    width: 100%;
+    
+
 }
+
+@media (max-width: 767px){
+    body, html {
+        height: 100%;
+        overflow-x: hidden !important;
+    }
+}
+
 
 html {
     scroll-behavior: smooth;
-  }
+    /* height: 100% !important; */
+}
 
 a {
     color: #005ca8;
@@ -20,18 +37,6 @@ a:hover {
     color: #00cc95;
     text-decoration: none;
 }
-
-/* 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: "Raleway", sans-serif;
-} */
-
-
 
 
 /*--------------------------------------------------------------
@@ -271,7 +276,7 @@ h6 {
 #heroSolutions {
     width: 100%;
     height: 250px;
-    background: linear-gradient(rgba(71, 71, 71, 0.4), rgba(78, 78, 78, 0.4)), url("img/capabilities.jpeg") bottom center;
+    background: linear-gradient(rgba(71, 71, 71, 0.4), rgba(78, 78, 78, 0.4)), url("https://trax-imagery.s3.us-east-2.amazonaws.com/img/capabilities.jpeg") bottom center;
     background-size: cover;
     position: relative;
     padding-top: 0;
@@ -279,7 +284,7 @@ h6 {
 
 #heroSolutions #heroText {
     padding-top: 75px;
-    backdrop-filter: blur(20px);
+    /* backdrop-filter: blur(20px); */
 }
 
 
@@ -334,15 +339,17 @@ h6 {
     text-transform: uppercase;
 
 }
+
 #heroSolutions #heroText {
     padding-top: auto;
 }
+
 /* HERO ROOF PAGE */
 
 #heroRoof {
     width: 100%;
     height: 80px;
-    background: linear-gradient(rgba(37, 37, 37, 0.4), rgba(37, 37, 37, 0.4)), url("img/blog.jpeg") right center;
+    background: linear-gradient(rgba(37, 37, 37, 0.4), rgba(37, 37, 37, 0.4)), url("https://trax-imagery.s3.us-east-2.amazonaws.com/img/blog.jpeg") right center;
     background-size: cover;
     position: relative;
     background-attachment: fixed;
@@ -421,7 +428,7 @@ h6 {
 .newHero {
     width: 100%;
     height: 700px;
-    background: linear-gradient(#00000000, #00000000), url("img/traxHead.jpeg") center center;
+    background: linear-gradient(#00000000, #00000000), url("https://trax-imagery.s3.us-east-2.amazonaws.com/img/traxHead.jpeg") center center;
     background-size: cover;
     position: relative;
     background-repeat: no-repeat;
@@ -454,7 +461,7 @@ h6 {
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
-   
+
 }
 
 .newHero #newCard {
@@ -541,6 +548,7 @@ h6 {
         line-height: 36px;
     }
 }
+
 .modal-backdrop {
     display: none;
     z-index: 1040 !important;
@@ -582,7 +590,8 @@ h6 {
     border-radius: 4px;
     transition: 0.3s;
     line-height: 1;
-    color: #005ac8;;
+    color: #005ac8;
+    ;
     -webkit-animation-delay: 0.8s;
     animation-delay: 0.8s;
     margin-top: 6px;
@@ -719,6 +728,8 @@ h6 {
 
 .servIndex {
     margin: 60px auto !important;
+    height: 100%;
+    /* overflow-x: hidden; */
 
 }
 
@@ -734,6 +745,60 @@ h6 {
     margin: 5px;
 }
 
+@media (max-width: 375px) {
+    .container_img {
+        margin: 5px auto;
+    }
+
+    .container_img article {
+        padding: auto !important;
+    }
+
+    .container_img img {
+        max-width: 320px;
+        width: auto;
+    }
+
+    .container_img {
+        max-width: 375px;
+        width: auto;
+    }
+    .contenedor {
+        max-width: 375px !important;
+        width: auto;
+    }
+    .contenedor .row {
+        max-width: 100% !important;
+        width: auto;
+        margin: auto;
+    }
+}
+
+
+@media (max-width: 540px) {
+    .contenedor {
+        max-width: 540px !important;
+        height: auto;
+    }
+    .contenedor .row {
+        max-width: 100% !important;
+        width: auto;
+        margin: auto;
+    }
+    .servIndex .contBig {
+        min-height: 540px !important;
+        overflow-x: hidden;
+    }
+    .servIndex #ServeRow {
+        min-height: 100% !important;
+        overflow-x: hidden;
+    }
+    .More {
+        overflow-x: hidden;
+    }
+
+    
+}
 .container_img article {
     padding: 10%;
     position: absolute;
@@ -1078,7 +1143,7 @@ section {
     padding: 10px 12px;
 }
 
-.contact .php-email-form #submitBtn{
+.contact .contact-form #submitBtn {
     background: #005ca8 !important;
     border: 0;
     padding: 10px 30px;
@@ -1113,7 +1178,6 @@ section {
         transform: rotate(360deg);
     }
 }
-
 
 
 
@@ -1465,40 +1529,6 @@ service section style
     margin: 60px 0 20px;
 }
 
-/*Head Title*/
-.head_title p {
-    line-height: 2.3rem;
-}
-
-
-#middleImg {
-    background: url("img/space.jpg");
-    background-position: center right;
-    max-height: 350px;
-    width: auto;
-}
-
-#col-right .col-12 {
-    text-align: center;
-}
-
-#col-left .col-12 {
-    text-align: center;
-}
-
-#col-left .col-12:hover,
-#col-right .col-12:hover {
-    background-color: #005ac842;
-}
-
-#col-left .col-12 h5 {
-    padding-top: 25px;
-}
-
-#col-right .col-12 h5 {
-    padding-top: 25px;
-}
-
 
 /*========================================================================
                     Study Section Css
@@ -1510,7 +1540,7 @@ service section style
 }
 
 .right-pic-two {
-    background: url("img/manufacturing.jpg");
+    background: url("https://trax-imagery.s3.us-east-2.amazonaws.com/img/manufacturing.jpg");
     background-repeat: no-repeat;
     background-position: center;
     height: 350px;
@@ -1520,7 +1550,7 @@ service section style
 }
 
 .right-pic {
-    background: url(img/chip.jpg);
+    background: url(https://trax-imagery.s3.us-east-2.amazonaws.com/img/chip.jpg);
     background-repeat: no-repeat;
     background-position: center;
     height: 350px;
@@ -1528,10 +1558,19 @@ service section style
     text-align: center;
 }
 
-/* 
-@media (max-width: 1024px) {
 
-} */
+@media (max-width: 375px) {
+    .right-pic {
+        max-height: 350px;
+        width: auto;
+    }
+
+    .right-pic-two {
+        max-height: 350px;
+        width: auto;
+    }
+
+}
 
 
 @media (max-width: 1024px) {
@@ -1903,7 +1942,7 @@ service section style
 .studyHero {
     width: 100%;
     height: 120px;
-    background: url(img/traxHead.jpeg);
+    background: url(https://trax-imagery.s3.us-east-2.amazonaws.com/img/traxHead.jpeg);
     padding-top: 20px;
 }
 
@@ -1933,16 +1972,18 @@ service section style
 
 div.elem-group {
     margin: 40px 0;
-  }
-  
-  label {
+}
+
+label {
     display: block;
     font-family: 'Aleo';
     padding-bottom: 4px;
     font-size: 1.25em;
-  }
-  
-  input, select, textarea {
+}
+
+input,
+select,
+textarea {
     border-radius: 2px;
     border: 1px solid #ccc;
     box-sizing: border-box;
@@ -1950,13 +1991,13 @@ div.elem-group {
     font-family: 'Aleo';
     width: 500px;
     padding: 8px;
-  }
-  
-  textarea {
+}
+
+textarea {
     height: 250px;
-  }
-  
-  .btn-learn-more{
+}
+
+.btn-learn-more {
     height: 50px;
     background: #005ac8;
     color: white !important;
@@ -1965,15 +2006,15 @@ div.elem-group {
     font-family: 'Rubik';
     border-radius: 4px;
     cursor: pointer;
-  }
-  
-  .btn-learn-more:hover {
+}
+
+.btn-learn-more:hover {
     border: 2px solid black;
-  }
+}
 
 
 
- .btn-learn-more {
+.btn-learn-more {
     font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-size: 14px;
@@ -1983,7 +2024,8 @@ div.elem-group {
     border-radius: 4px;
     transition: 0.3s;
     line-height: 1;
-    color: #005ac8;;
+    color: #005ac8;
+    ;
     -webkit-animation-delay: 0.8s;
     animation-delay: 0.8s;
     margin-top: 6px;
@@ -1991,7 +2033,67 @@ div.elem-group {
 }
 
 .btn-learn-more:hover {
-    background: #005ac8;;
+    background: #005ac8;
+    ;
     color: #fff;
     text-decoration: none;
+}
+
+
+/* Small Screen Index Page Card Section */
+
+#smallOne {
+
+    background:
+        linear-gradient(rgba(95, 106, 143, 1),
+            rgba(80, 94, 143, 0.2)), url(https://trax-imagery.s3.us-east-2.amazonaws.com/img/roll.jpeg);
+    background-size: cover;
+    height: 250px;
+    width: auto;
+    margin: 20px auto;
+
+}
+
+#smallTwo {
+
+    background:
+        linear-gradient(rgba(80, 94, 143, 1),
+            rgba(80, 94, 143, 0.2)), url(https://trax-imagery.s3.us-east-2.amazonaws.com/img/tiretag.jpg);
+    background-size: cover;
+    height: 250px;
+    width: auto;
+    margin: 20px auto;
+}
+
+#smallThree {
+
+    background:
+        linear-gradient(rgba(80, 94, 143, 1),
+            rgba(80, 94, 143, 0.2)), url(https://trax-imagery.s3.us-east-2.amazonaws.com/img/capabilities.jpeg);
+    background-size: cover;
+    height: 250px;
+    width: auto;
+    margin: 20px auto;
+}
+
+#smallOne p, #smallTwo p, #smallThree p {
+    padding: auto;
+    color: white;
+    text-align: center;
+
+}
+
+#smallOne h2, #smallTwo h2, #smallThree h2 {
+    padding: auto;
+    color: white;
+    text-align: center;
+   
+}
+
+.verticalProps {
+    height: 100%;
+}
+
+.smallScreen {
+    overflow: visible;
 }
