@@ -97,6 +97,7 @@ h2 small {
   .responsive-col li .col {
     font-size: 14px;
     padding: 0 !important;
+    
   }
 
   .card .z-depth-1{
@@ -114,6 +115,11 @@ h2 small {
 
 
 }
+
+.smallFont {
+  font-size: 12px;
+}
+
 
   .responsive-table .col:before {
     display: none;
@@ -158,6 +164,7 @@ h2 small {
   flex-grow: 0.25;
       color: #000;
       height: 100%;
+      text-transform: lowercase;
 }
 
 .responsive-col .col-3 {
@@ -172,3 +179,6 @@ h2 small {
   height: 100%;
 }
 
+#lowerCase {
+  text-transform: lowercase;
+}
