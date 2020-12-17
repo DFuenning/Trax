@@ -738,12 +738,7 @@ a:hover {
 
 }
 
-.container_img {
-    background-color: rgba(57, 62, 93, 0.7);
-    padding: 0;
-    overflow: hidden;
-    margin: 5px;
-}
+
 
 @media (max-width: 375px) {
     .container_img {
@@ -799,6 +794,13 @@ a:hover {
 
     
 }
+
+.container_img {
+    background-color: rgba(57, 62, 93, 0.7);
+    padding: 0;
+    overflow: hidden;
+    margin: 5px;
+}
 .container_img article {
     padding: 10%;
     position: absolute;
@@ -829,7 +831,8 @@ a:hover {
 
 .container_img img {
     width: 100%;
-    height: 100%;
+    height: 500px;
+    /* background-size: cover; */
     top: 0;
     left: 0;
     opacity: 0.4;
@@ -1851,9 +1854,7 @@ service section style
 # Event List
 --------------------------------------------------------------*/
 
-.event-list {
-    margin-top: 50px;
-}
+
 
 .event-list .card {
     border: 0;
